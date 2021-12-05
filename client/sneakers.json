@@ -1,0 +1,723 @@
+[
+    {
+        "sku": "555088-706",
+        "brand": "Air Jordan",
+        "name": "Air Jordan 1 High Retro OG 'Brotherhood'",
+        "colorway": "University Gold/Light Bordeaux/White",
+        "gender": "men",
+        "silhouette": "Air Jordan 1",
+        "releaseYear": 2022,
+        "releaseDate": "2022-02-26",
+        "retailPrice": 170,
+        "estimatedMarketValue": 170,
+        "story": "The Air Jordan 1 High Retro OG ‘Brotherhood’ features a vibrant color scheme inspired by Omega Psi Phi, the fraternity that Michael Jordan joined as a student at the University of North Carolina. The upper combines a white leather quarter panel with nubuck overlays in Light Bordeaux. A leather toe box in University Gold is matched by wraparound leather overlays at the collar and heel. A leather Nike Air tag decorates the nylon tongue, while a classic Wings logo is stamped on the lateral ankle. Supporting the high-top is a rubber cupsole with an Air-sole heel unit encapsulated in lightweight polyurethane.",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/061/804/065/original/555088_706.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/061/804/065/original/555088_706.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/061/804/065/original/555088_706.png.png"
+        }
+    },
+    {
+        "sku": "CT4838-004",
+        "brand": "Air Jordan",
+        "name": "Air Jordan 5 Retro 'Racer Blue'",
+        "colorway": "Black/Racer Blue/Reflective Silver",
+        "gender": "men",
+        "silhouette": "Air Jordan 5",
+        "releaseYear": 2022,
+        "releaseDate": "2022-02-12",
+        "retailPrice": 190,
+        "estimatedMarketValue": 190,
+        "story": "The Air Jordan 5 Retro ‘Racer Blue’ adds color-popped accents to a stealthy colorway of the venerable 1990 silhouette, designed by Tinker Hatfield and introduced to the world by Mars Blackmon. The mid-top makes use of a black nubuck upper with tonal TPU eyelets, translucent quarter panel netting and a reflective silver tongue. The latter features contrasting hits of royal blue on the embroidered Jumpman and interior lining. Lightweight cushioning arrives via a blue polyurethane midsole, embellished with black shark tooth detailing and fitted with visible Air-sole cushioning in the heel. A translucent rubber outsole provides grippy traction underfoot.",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/061/079/575/original/CT4838_004.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/061/079/575/original/CT4838_004.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/061/079/575/original/CT4838_004.png.png"
+        }
+    },
+    {
+        "sku": "555088-404",
+        "brand": "Air Jordan",
+        "name": "Air Jordan 1 Retro High OG 'Dark Marina Blue'",
+        "colorway": "Dark Marina Blue/Black/White",
+        "gender": "men",
+        "silhouette": "Air Jordan 1",
+        "releaseYear": 2022,
+        "releaseDate": "2022-01-15",
+        "retailPrice": 170,
+        "estimatedMarketValue": 699,
+        "story": "The Air Jordan 1 Retro High OG ‘Dark Marina Blue’ dresses the iconic silhouette in classic two-tone color blocking. The all-leather upper features a black base with contrasting dark blue overlays along the forefoot, heel, collar and eyestay. A matching blue Swoosh is accompanied by a Jordan Wings logo stamped in black on the lateral collar flap. Atop the nylon tongue, a woven Nike Air tag nods to the shoe’s retro cushioning technology: an Air-sole unit encapsulated in polyurethane nestled in the heel of the rubber cupsole.",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/059/885/343/original/555088_404.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/059/885/343/original/555088_404.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/059/885/343/original/555088_404.png.png"
+        }
+    },
+    {
+        "sku": "555088-063",
+        "brand": "Jordan",
+        "name": "Jordan 1 Retro High OG Bred Patent",
+        "colorway": "Black/White-Varsity Red",
+        "gender": "men",
+        "silhouette": "Air Jordan 1",
+        "releaseYear": 2021,
+        "releaseDate": "2021-12-30",
+        "retailPrice": 170,
+        "estimatedMarketValue": 599,
+        "story": "The Air Jordan 1 Retro High OG Patent ‘Bred’ treats the iconic colorway to a glossy makeover. Aside from the shoe’s patent leather construction, the essential design DNA remains intact. The upper pairs basic black paneling with contrasting hits of Varsity Red on the toe box, Swoosh, heel overlay and collar flap. A woven Nike tag adorns the black nylon tongue, while a Wings logo is stamped on the lateral collar. The high-top rides on a sturdy rubber cupsole, enhanced with an Air-sole unit encapsulated in lightweight polyurethane.",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/060/558/430/original/784379_00.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/060/558/430/original/784379_00.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/060/558/430/original/784379_00.png.png"
+        }
+    },
+    {
+        "sku": "414575-015",
+        "brand": "Air Jordan",
+        "name": "Air Jordan 13 Retro PS 'Court Purple'",
+        "colorway": "Black/Court Purple/White",
+        "gender": "youth",
+        "silhouette": "Air Jordan 13",
+        "releaseYear": 2021,
+        "releaseDate": "2021-12-29",
+        "retailPrice": 80,
+        "estimatedMarketValue": 200,
+        "story": "",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/062/968/914/original/414575_015.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/062/968/914/original/414575_015.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/062/968/914/original/414575_015.png.png"
+        }
+    },
+    {
+        "sku": "CT8527-016",
+        "brand": "Jordan",
+        "name": "Jordan 4 Retro Red Thunder",
+        "colorway": "Black/White-Red",
+        "gender": "men",
+        "silhouette": "Air Jordan 4",
+        "releaseYear": 2021,
+        "releaseDate": "2021-12-23",
+        "retailPrice": 190,
+        "estimatedMarketValue": 481,
+        "story": "The Air Jordan 4 Retro ‘Red Thunder’ features familiar color blocking that recalls the coveted ‘Thunder’ colorway, originally released in 2006 and subsequently reissued in 2012. The mid-top sports a black nubuck upper with contrasting pops of crimson in lieu of the older shoe’s Tour Yellow accents. They appear on the sneaker’s molded eyelets, interior tongue, quarter panel, throat and midsole, which packs visible Air-sole cushioning under the heel. Jumpman branding decorates the tongue tag and heel.",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/061/943/941/original/791362_00.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/061/943/941/original/791362_00.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/061/943/941/original/791362_00.png.png"
+        }
+    },
+    {
+        "sku": "DD9335-641",
+        "brand": "Jordan",
+        "name": "Jordan 1 Retro High OG Atmosphere (W)",
+        "colorway": "Atmosphere/White-Laser Pink-Obsidian",
+        "gender": "women",
+        "silhouette": "Air Jordan 1",
+        "releaseYear": 2021,
+        "releaseDate": "2021-12-22",
+        "retailPrice": 190,
+        "estimatedMarketValue": 450,
+        "story": "The women’s Air Jordan 1 Retro High OG SE ‘Atmosphere’ updates the iconic silhouette with pastel accents in a glossy finish. The upper is distinguished by pink patent leather on the tox box, heel overlay and collar flap, featuring a traditional Wings stamped in Obsidian on the lateral side. The dark navy hue is repeated on the forefoot overlay, eyestay and Swoosh, with the latter contrasted by soft white leather on the quarter panel. Nike Air branding appears on the tongue tag and sockliner. The high-top rides on a rubber cupsole with encapsulated Air-sole cushioning in the heel and a pink-colored outsole underfoot.",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/060/220/813/original/DD9335_641.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/060/220/813/original/DD9335_641.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/060/220/813/original/DD9335_641.png"
+        }
+    },
+    {
+        "sku": "DH3097-001",
+        "brand": "Jordan",
+        "name": "Jordan 1 Retro High OG Hand Crafted",
+        "colorway": "Black/Archaeo Brown-Dark Chocolate",
+        "gender": "men",
+        "silhouette": "Air Jordan 1",
+        "releaseYear": 2021,
+        "releaseDate": "2021-12-18",
+        "retailPrice": 170,
+        "estimatedMarketValue": 170,
+        "story": "The Air Jordan 1 High OG ‘Hand Crafted’ treats the iconic silhouette to an eclectic color palette. The upper features a white leather base with brown nubuck forefoot overlays, green nubuck eyestays, a magenta leather heel overlay, and reflective silver trim along the quarter panel and heel. Additional details include a stitched leather Wings logo on the lateral collar flap, two-tone dyed laces, and a standard Nike-branded woven tag atop the nylon tongue. A rubber cupsole with encapsulated Air-sole cushioning anchors the high-top.",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/060/352/665/original/DH3097_001.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/060/352/665/original/DH3097_001.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/060/352/665/original/DH3097_001.png.png"
+        }
+    },
+    {
+        "sku": "DN3400-001",
+        "brand": "Air Jordan",
+        "name": "SoleFly x Air Jordan 1 Low 'Carnivore'",
+        "colorway": "",
+        "gender": "men",
+        "silhouette": "Air Jordan 1",
+        "releaseYear": 2021,
+        "releaseDate": "2021-12-17",
+        "retailPrice": 0,
+        "estimatedMarketValue": 2000,
+        "story": "",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/062/904/141/original/DN3400_001.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/062/904/141/original/DN3400_001.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/062/904/141/original/DN3400_001.png.png"
+        }
+    },
+    {
+        "sku": "DN4169-200",
+        "brand": "Nike",
+        "name": "Travis Scott x Air Max 1 PS 'Baroque Brown'",
+        "colorway": "Baroque Brown/Lemon Drop/Wheat/Chile Red",
+        "gender": "youth",
+        "silhouette": "Air Max 1",
+        "releaseYear": 2021,
+        "releaseDate": "2021-12-16",
+        "retailPrice": 85,
+        "estimatedMarketValue": 2000,
+        "story": "Offered in little kids sizing, the Travis Scott x Nike Air Max 1 PS ‘Baroque Brown’ makes over the venerable silhouette in the Houston rapper’s signature style. Adopting an outdoor aesthetic inspired by the ACG Pocket Knife, the sneaker features a cream-colored mesh upper with ghillie style lacing and decorative webbing straps. Overlays in tan leather and brown nubuck bolster the airy build. Scott’s inverted Swoosh lands on the sneaker’s lateral side, while a Cactus Jack logo decorates the tongue. The sneaker rests on a yellow foam midsole with a visible Air unit nestled under the heel.",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/062/734/042/original/DN4169_200.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/062/734/042/original/DN4169_200.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/062/734/042/original/DN4169_200.png.png"
+        }
+    },
+    {
+        "sku": "DN4170-200",
+        "brand": "Nike",
+        "name": "Travis Scott x Air Max 1 TD 'Baroque Brown'",
+        "colorway": "Baroque Brown/Lemon Drop/Wheat/Chile Red",
+        "gender": "infant",
+        "silhouette": "Air Max 1",
+        "releaseYear": 2021,
+        "releaseDate": "2021-12-16",
+        "retailPrice": 70,
+        "estimatedMarketValue": 70,
+        "story": "The Travis Scott x Nike Air Max 1 TD ‘Baroque Brown’ brings the Houston rapper’s design imprimatur to a scaled-down version of the retro runner. Featuring a utilitarian aesthetic inspired by the ACG Pocket Knife, the sneaker carries a cream-colored mesh upper with decorative webbing straps and reinforced overlays in tan leather and brown nubuck. Scott’s signature rear-facing Swoosh adorns the lateral side panel, while a Cactus Jack logo graces the tongue. A foam midsole packs visible Air-sole cushioning under the heel for a smooth ride.",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/062/734/044/original/DN4170_200.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/062/734/044/original/DN4170_200.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/062/734/044/original/DN4170_200.png.png"
+        }
+    },
+    {
+        "sku": "DO9392-700",
+        "brand": "Nike",
+        "name": "Nike Air Max 1 Travis Scott Cactus Jack Saturn Gold",
+        "colorway": "Wheat/Lemon Drop-Baroque Brown-Chile Red",
+        "gender": "men",
+        "silhouette": "Air Max 1",
+        "releaseYear": 2021,
+        "releaseDate": "2021-12-16",
+        "retailPrice": 160,
+        "estimatedMarketValue": 1000,
+        "story": "The Travis Scott x Nike Air Max 1 ‘Saturn Gold’ features a monochrome yellow palette throughout an upper crafted from breathable mesh with stitched leather overlays. Outdoor-inspired details include two-tone rope laces and brown webbing straps integrated into the laces and heel overlay, branded with mismatched Nike and Cactus Jack logos. A rubberized Cactus Jack patch adorns the tongue, while Scott’s trademark reverse Swoosh adorns the sneaker’s lateral side. The one-note finish extends to a wedge-shaped foam midsole with Air-sole cushioning in the heel and a waffle-tread rubber outsole underfoot.",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/062/677/179/original/DO9392_700.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/062/677/179/original/DO9392_700.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/062/677/179/original/DO9392_700.png.png"
+        }
+    },
+    {
+        "sku": "DO9392-200",
+        "brand": "Nike",
+        "name": "Nike Air Max 1 Travis Scott Cactus Jack Baroque Brown",
+        "colorway": "Baroque Brown/Lemon Drop-Wheat-Chile Red",
+        "gender": "men",
+        "silhouette": "Air Max 1",
+        "releaseYear": 2021,
+        "releaseDate": "2021-12-16",
+        "retailPrice": 160,
+        "estimatedMarketValue": 799,
+        "story": "The Travis Scott x Nike Air Max 1 ‘Baroque Brown’ treats the iconic retro runner to a rugged outdoor-inspired makeover. Red hiker-style laces secure a cream-colored mesh upper with dark tan leather overlays and a brown nubuck mudguard. Scott’s signature reverse Swoosh decorates the lateral quarter panel in a Lemon Drop finish, while multicolor woven straps are integrated into the laces and heel overlay. The latter features a crimson triangular patch, accented with Cactus Jack branding on the right shoe and a classic Nike logo on the left. The sneaker is mounted on a two-tone foam midsole, fitted with Air-sole cushioning in the heel and supported by a waffle-traction rubber outsole.",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/062/677/178/original/DO9392_200.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/062/677/178/original/DO9392_200.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/062/677/178/original/DO9392_200.png.png"
+        }
+    },
+    {
+        "sku": "CT8012-005",
+        "brand": "Jordan",
+        "name": "Jordan 11 Retro Cool Grey (2021)",
+        "colorway": "Medium Grey/White-Cool Grey",
+        "gender": "men",
+        "silhouette": "Air Jordan 11",
+        "releaseYear": 2021,
+        "releaseDate": "2021-12-11",
+        "retailPrice": 225,
+        "estimatedMarketValue": 490,
+        "story": "The 2021 edition of the Air Jordan 11 Retro ‘Cool Grey’ brings back a colorway first released in 2001 and retroed again in 2010. Celebrating the 20th anniversary of the original launch, the mid-top build is faithful to the original, featuring a nubuck upper with tonal webbing lace loops and a shiny patent leather overlay, all rendered in tones of Medium and Cool Grey. A white Jumpman logo is embroidered on the lateral ankle, while a stylized ‘23’ decorates the heel notch. Lightweight cushioning is provided by a full-length Air-sole unit housed within a white Phylon midsole. Underfoot, a translucent outsole reveals a carbon fiber spring plate for enhanced on-court responsiveness.",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/061/481/867/original/704157_00.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/061/481/867/original/704157_00.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/061/481/867/original/704157_00.png.png"
+        }
+    },
+    {
+        "sku": "382192-01",
+        "brand": "Puma",
+        "name": "Liberty of London x Wmns Suede Mayu 'Floral'",
+        "colorway": "Apricot Cream/Golden Nugget",
+        "gender": "women",
+        "silhouette": "Suede Mayu",
+        "releaseYear": 2021,
+        "releaseDate": "2021-12-01",
+        "retailPrice": 150,
+        "estimatedMarketValue": 280,
+        "story": "",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/062/903/920/original/382192_01.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/062/903/920/original/382192_01.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/062/903/920/original/382192_01.png.png"
+        }
+    },
+    {
+        "sku": "BAPE-AUTHENTIC",
+        "brand": "Vans",
+        "name": "BAPE x Authentic 44 DX 'Camo'",
+        "colorway": "",
+        "gender": "men",
+        "silhouette": "Authentic",
+        "releaseYear": 2021,
+        "releaseDate": "2021-11-30",
+        "retailPrice": 0,
+        "estimatedMarketValue": 213,
+        "story": "",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/062/628/836/original/BAPE_AUTHENTIC.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/062/628/836/original/BAPE_AUTHENTIC.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/062/628/836/original/BAPE_AUTHENTIC.png.png"
+        }
+    },
+    {
+        "sku": "BAPE-SK8",
+        "brand": "Vans",
+        "name": "BAPE x Sk8-Hi 38 DX 'Lined Camo'",
+        "colorway": "",
+        "gender": "men",
+        "silhouette": "Sk8",
+        "releaseYear": 2021,
+        "releaseDate": "2021-11-30",
+        "retailPrice": 0,
+        "estimatedMarketValue": 250,
+        "story": "",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/062/628/837/original/BAPE_SK8.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/062/628/837/original/BAPE_SK8.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/062/628/837/original/BAPE_SK8.png.png"
+        }
+    },
+    {
+        "sku": "DO1830-200",
+        "brand": "Jordan",
+        "name": "Jordan 3 Retro Low Multi-Camo",
+        "colorway": "Brown/Beige/Green/Grey",
+        "gender": "men",
+        "silhouette": "Air Jordan 3",
+        "releaseYear": 2021,
+        "releaseDate": "2021-11-29",
+        "retailPrice": 200,
+        "estimatedMarketValue": 1125,
+        "story": "The Air Jordan 3 Retro ‘Camo’ updates the iconic model with refreshed materials and prints. A dark beige hue is executed on the canvas and textile upper, fortified with contrasting overlays in moss green and woodland camo. The segmented mudguard features a mix of beige herringbone twill and grey rain camo, while the shaggy suede heel overlay is rendered in olive green. The heel tab offers customization opportunities via removable hook-and-loop fastener patches. Lightweight cushioning is provided by a two-tone polyurethane midsole with a red-tinged Air-sole unit under the heel.",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/060/352/683/original/DO1830_200.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/060/352/683/original/DO1830_200.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/060/352/683/original/DO1830_200.png.png"
+        }
+    },
+    {
+        "sku": "GX1437",
+        "brand": "Reebok",
+        "name": "Question Low 'Alive With Color'",
+        "colorway": "Black/Multi-Color",
+        "gender": "men",
+        "silhouette": "Question",
+        "releaseYear": 2021,
+        "releaseDate": "2021-11-26",
+        "retailPrice": 0,
+        "estimatedMarketValue": 0,
+        "story": "",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/062/628/878/original/GX1437.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/062/628/878/original/GX1437.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/062/628/878/original/GX1437.png.png"
+        }
+    },
+    {
+        "sku": "DC4025-001",
+        "brand": "Nike",
+        "name": "Air Max Pre-Day 'Black White'",
+        "colorway": "Black/White",
+        "gender": "men",
+        "silhouette": "Air Max Pre-Day",
+        "releaseYear": 2021,
+        "releaseDate": "2021-11-26",
+        "retailPrice": 130,
+        "estimatedMarketValue": 160,
+        "story": "",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/062/904/072/original/DC4025_001.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/062/904/072/original/DC4025_001.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/062/904/072/original/DC4025_001.png.png"
+        }
+    },
+    {
+        "sku": "DO3857-010",
+        "brand": "Air Jordan",
+        "name": "Air Jordan 11 Retro PS 'Animal Instinct'",
+        "colorway": "Black/Gym Red/Sail/White",
+        "gender": "youth",
+        "silhouette": "Air Jordan 11",
+        "releaseYear": 2021,
+        "releaseDate": "2021-11-26",
+        "retailPrice": 95,
+        "estimatedMarketValue": 223,
+        "story": "Made for little kids, the Air Jordan 11 Retro PS ‘Animal Instinct’ strips the shoe of one of its defining features: the patent leather mudguard. Instead, the overlay is rendered in off-white suede with various animal prints in contrasting black. The rest of the upper is constructed from black nubuck with rope laces looped through webbing eyelets. A tonal Jumpman logo adorns the lateral ankle, while contrasting hits of red appear on stylized branding elements atop the heel tab and tongue. The mid-top rides on a cushy white foam midsole and translucent rubber outsole.",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/062/363/409/original/DO3857_010.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/062/363/409/original/DO3857_010.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/062/363/409/original/DO3857_010.png.png"
+        }
+    },
+    {
+        "sku": "DO3856-010",
+        "brand": "Air Jordan",
+        "name": "Air Jordan 11 Retro TD 'Animal Instinct'",
+        "colorway": "Black/Gym Red/Sail/White",
+        "gender": "infant",
+        "silhouette": "Air Jordan 11",
+        "releaseYear": 2021,
+        "releaseDate": "2021-11-26",
+        "retailPrice": 80,
+        "estimatedMarketValue": 195,
+        "story": "",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/062/677/176/original/DO3856_010.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/062/677/176/original/DO3856_010.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/062/677/176/original/DO3856_010.png.png"
+        }
+    },
+    {
+        "sku": "DO6485-600",
+        "brand": "Nike",
+        "name": "Dunk Low GS 'Pink Velvet'",
+        "colorway": "",
+        "gender": "youth",
+        "silhouette": "Dunk",
+        "releaseYear": 2021,
+        "releaseDate": "2021-11-24",
+        "retailPrice": 95,
+        "estimatedMarketValue": 130,
+        "story": "",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/062/390/832/original/812193_00.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/062/390/832/original/812193_00.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/062/390/832/original/812193_00.png.png"
+        }
+    },
+    {
+        "sku": "DB2889-001",
+        "brand": "Jordan",
+        "name": "Jordan 1 Retro High Element Gore-Tex Black Particle Grey",
+        "colorway": "Black/Chile Red/Particle Grey/Sail",
+        "gender": "men",
+        "silhouette": "Air Jordan 1",
+        "releaseYear": 2021,
+        "releaseDate": "2021-11-23",
+        "retailPrice": 200,
+        "estimatedMarketValue": 229,
+        "story": "The Air Jordan 1 High Element Gore-Tex ‘Black Particle Grey’ updates the iconic silhouette with a refreshed build designed to withstand the elements. A waterproof Gore-Tex membrane lines the upper, constructed from dark green textile with nubuck overlays in black and grey. 3M reflective Swooshes provide enhanced visibility in low-light conditions. Branding elements include a crimson Nike Air logo on the woven tongue tag and a Gore-Tex wordmark stamped on the lateral heel. Underfoot, the outsole features a blend of translucent and opaque black rubber.",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/062/941/294/original/760013_00.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/062/941/294/original/760013_00.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/062/941/294/original/760013_00.png.png"
+        }
+    },
+    {
+        "sku": "DH8640-101",
+        "brand": "Nike",
+        "name": "Blazer Mid '77 SE GS 'White Rush Maroon'",
+        "colorway": "White/Black/Summit White/Rush Maroon",
+        "gender": "youth",
+        "silhouette": "Blazer",
+        "releaseYear": 2021,
+        "releaseDate": "2021-11-21",
+        "retailPrice": 0,
+        "estimatedMarketValue": 0,
+        "story": "",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/062/968/939/original/DH8640_101.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/062/968/939/original/DH8640_101.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/062/968/939/original/DH8640_101.png.png"
+        }
+    },
+    {
+        "sku": "GX3607",
+        "brand": "adidas",
+        "name": "adidas Yeezy 500 Ash Grey",
+        "colorway": "Ash Grey/Ash Grey/Ash Grey",
+        "gender": "men",
+        "silhouette": "Yeezy 500",
+        "releaseYear": 2021,
+        "releaseDate": "2021-11-20",
+        "retailPrice": 200,
+        "estimatedMarketValue": 550,
+        "story": "",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/062/318/452/original/GX3607.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/062/318/452/original/GX3607.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/062/318/452/original/GX3607.png.png"
+        }
+    },
+    {
+        "sku": "555088-611",
+        "brand": "Jordan",
+        "name": "Jordan 1 Retro High OG Bordeaux",
+        "colorway": "Bordeaux/White-Metallic Silver",
+        "gender": "men",
+        "silhouette": "Air Jordan 1",
+        "releaseYear": 2021,
+        "releaseDate": "2021-11-20",
+        "retailPrice": 170,
+        "estimatedMarketValue": 235,
+        "story": "The Air Jordan 1 Retro High OG ‘Bordeaux’ dresses the archetypal silhouette in a white leather upper with vinous leather overlays at the forefoot, heel and collar. Similar to the CO.JP ‘Midnight Navy’ colorway, the sneaker is accented with a metallic silver Swoosh and a jeweled Wings logo on the lateral ankle. A woven Nike Air tongue tag atop the lightly padded nylon tongue delivers an OG touch. A traditional two-tone AJ1 cupsole packs encapsulated Nike Air cushioning under the heel.",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/057/145/156/original/555088_611.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/057/145/156/original/555088_611.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/057/145/156/original/555088_611.png.png"
+        }
+    },
+    {
+        "sku": "575441-611",
+        "brand": "Jordan",
+        "name": "Jordan 1 Retro High OG Bordeaux (GS)",
+        "colorway": "Bordeaux/White-Metallic Silver",
+        "gender": "child",
+        "silhouette": "Air Jordan 1",
+        "releaseYear": 2021,
+        "releaseDate": "2021-11-20",
+        "retailPrice": 130,
+        "estimatedMarketValue": 204,
+        "story": "Built for big kids, the Air Jordan 1 Retro High OG GS ‘Bordeaux’ features branding elements that recall the silhouette’s CO.JP releases from 2001. They include a metallic silver Swoosh and jeweled wings logo, both of which decorate a two-tone leather upper in white and Bordeaux. Atop the nylon tongue, a woven Nike tag gives the shoe an OG-inspired touch. The high-top rests on a durable rubber cupsole, featuring encapsulated Air-sole cushioning in the heel.",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/062/253/345/original/575441_611.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/062/253/345/original/575441_611.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/062/253/345/original/575441_611.png.png"
+        }
+    },
+    {
+        "sku": "DD1869-109",
+        "brand": "Nike",
+        "name": "Nike Dunk High Sail Gum (W)",
+        "colorway": "White/Sail-Gum Medium Brown",
+        "gender": "women",
+        "silhouette": "Dunk",
+        "releaseYear": 2021,
+        "releaseDate": "2021-11-19",
+        "retailPrice": 110,
+        "estimatedMarketValue": 113,
+        "story": "",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/062/137/690/original/830573_00.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/062/137/690/original/830573_00.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/062/137/690/original/830573_00.png.png"
+        }
+    },
+    {
+        "sku": "H67753",
+        "brand": "adidas",
+        "name": "adidas Trae Young 1 Light Solid Grey Snakeskin",
+        "colorway": "Light Solid Grey/Crystal White/Core Black",
+        "gender": "men",
+        "silhouette": "Trae Young 1",
+        "releaseYear": 2021,
+        "releaseDate": "2021-11-19",
+        "retailPrice": 130,
+        "estimatedMarketValue": 190,
+        "story": "",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/062/253/494/original/H67753.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/062/253/494/original/H67753.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/062/253/494/original/H67753.png.png"
+        }
+    },
+    {
+        "sku": "GW3639",
+        "brand": "adidas",
+        "name": "adidas Trae Young 1 Acid Orange",
+        "colorway": "Acid Orange/Acid Orange/Team Green",
+        "gender": "men",
+        "silhouette": "Trae Young 1",
+        "releaseYear": 2021,
+        "releaseDate": "2021-11-19",
+        "retailPrice": 130,
+        "estimatedMarketValue": 130,
+        "story": "",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/062/253/469/original/GW3639.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/062/253/469/original/GW3639.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/062/253/469/original/GW3639.png.png"
+        }
+    },
+    {
+        "sku": "DC9336-300",
+        "brand": "Nike",
+        "name": "Air Max 90 SE 'Running Club - Roma Green'",
+        "colorway": "Roma Green/Sail/Orange/Mean Green",
+        "gender": "men",
+        "silhouette": "Air Max 90",
+        "releaseYear": 2021,
+        "releaseDate": "2021-11-18",
+        "retailPrice": 160,
+        "estimatedMarketValue": 160,
+        "story": "",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/062/968/931/original/DC9336_300.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/062/968/931/original/DC9336_300.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/062/968/931/original/DC9336_300.png.png"
+        }
+    },
+    {
+        "sku": "DH2718-400",
+        "brand": "Nike",
+        "name": "Nike Air Max 95 SE Running Club Photo Blue",
+        "colorway": "Light Photo Blue/Black-Roma Green",
+        "gender": "men",
+        "silhouette": "Air Max 95",
+        "releaseYear": 2021,
+        "releaseDate": "2021-11-18",
+        "retailPrice": 180,
+        "estimatedMarketValue": 200,
+        "story": "Launching as part of the ‘Air Max Running Club’ collection, the Nike Air Max 95 SE ‘Light Photo Blue’ gives Sergio Lozano’s original design a vibrant makeover. The upper is crafted from blue nylon with wavy side overlays in orange nylon and green suede. The webbing eyelets of the original AM95 remain, but the tongue is updated with exposed foam construction. Affixed to the lateral heel, a woven tag displays ‘AMRC’ branding on the right shoe and ‘BVRTN, OR’ on the left. Lightweight cushioning arrives via a white foam midsole with green-tinted Max Air units under the forefoot and heel.",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/062/318/436/original/DH2718_400.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/062/318/436/original/DH2718_400.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/062/318/436/original/DH2718_400.png.png"
+        }
+    },
+    {
+        "sku": "DC9336-400",
+        "brand": "Nike",
+        "name": "Air Max 90 SE 'Running Club - Deep Royal'",
+        "colorway": "Deep Royal/University Red/Black/Obsidian",
+        "gender": "men",
+        "silhouette": "Air Max 90",
+        "releaseYear": 2021,
+        "releaseDate": "2021-11-18",
+        "retailPrice": 160,
+        "estimatedMarketValue": 160,
+        "story": "",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/062/968/932/original/DC9336_400.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/062/968/932/original/DC9336_400.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/062/968/932/original/DC9336_400.png.png"
+        }
+    },
+    {
+        "sku": "GW2646",
+        "brand": "adidas",
+        "name": "Xbox x Forum Tech Boost 'Halo 20th Anniversary'",
+        "colorway": "",
+        "gender": "men",
+        "silhouette": "Forum",
+        "releaseYear": 2021,
+        "releaseDate": "2021-11-18",
+        "retailPrice": 180,
+        "estimatedMarketValue": 180,
+        "story": "The Xbox x adidas Forum Tech Boost ‘Halo 20th Anniversary’ celebrates two decades of Microsoft’s gaming console. Based on the original Forum Low, the sneaker features a two-tone palette inspired by a limited-edition Xbox console that accompanied the launch of ‘Halo: Combat Evolved’ in 2001. The upper is constructed from black textile with neon green no-sew overlays throughout. The Xbox logo decorates the tongue, while the heel overlay is inscribed with ‘Xbox Seattle WA 2001’ on the lateral side. Underpinning the low-top is a full-length Boost midsole wrapped in translucent rubber.",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/062/318/450/original/GW2646.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/062/318/450/original/GW2646.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/062/318/450/original/GW2646.png.png"
+        }
+    },
+    {
+        "sku": "DH1085-700",
+        "brand": "Nike",
+        "name": "Air Max 97 SE 'Running Club - Pollen Orange'",
+        "colorway": "Pollen/Orange/Light Photo Blue",
+        "gender": "men",
+        "silhouette": "Air Max 97",
+        "releaseYear": 2021,
+        "releaseDate": "2021-11-18",
+        "retailPrice": 180,
+        "estimatedMarketValue": 180,
+        "story": "",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/062/968/937/original/DH1085_700.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/062/968/937/original/DH1085_700.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/062/968/937/original/DH1085_700.png.png"
+        }
+    },
+    {
+        "sku": "DM0840-200",
+        "brand": "Nike",
+        "name": "Nike ACG Air Mowabb Limestone (2021)",
+        "colorway": "Limestone/Reflective Silver-Khaki",
+        "gender": "men",
+        "silhouette": "Air Mowabb",
+        "releaseYear": 2021,
+        "releaseDate": "2021-11-18",
+        "retailPrice": 160,
+        "estimatedMarketValue": 196,
+        "story": "",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/061/702/491/original/DM0840_200.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/061/702/491/original/DM0840_200.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/061/702/491/original/DM0840_200.png.png"
+        }
+    },
+    {
+        "sku": "DH1085-001",
+        "brand": "Nike",
+        "name": "Air Max 97 SE 'Running Club - Blue'",
+        "colorway": "",
+        "gender": "men",
+        "silhouette": "Air Max 97",
+        "releaseYear": 2021,
+        "releaseDate": "2021-11-18",
+        "retailPrice": 0,
+        "estimatedMarketValue": 0,
+        "story": "The Nike Air Max 97 SE ‘Blue’ is drawn from the ‘Air Max Running Club’ collection, inspired by a fictional ‘70s track team and showcasing the vintage aesthetic of the decade that birthed a running revolution. The upper combines a navy textile base with tonal suede overlays in smooth and hairy textures. A contrasting off-white finish is applied to the laces and exposed foam tongue, the latter accented with a woven Nike Air tag. Additional branding elements include a yellow embroidered mini-Swoosh and mismatched tags that display ‘AMRC’ and ‘BVRTN, OR’ lettering. The sneaker is mounted on a crisp white foam midsole, featuring a visible Max Air unit that runs the length of the black rubber outsole.",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/062/318/435/original/DH1085_001.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/062/318/435/original/DH1085_001.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/062/318/435/original/DH1085_001.png.png"
+        }
+    },
+    {
+        "sku": "DM0840-001",
+        "brand": "Nike",
+        "name": "ACG Air Mowabb 'Off Noir'",
+        "colorway": "Off Noir/Black/Olive Grey",
+        "gender": "men",
+        "silhouette": "Air Mowabb",
+        "releaseYear": 2021,
+        "releaseDate": "2021-11-18",
+        "retailPrice": 160,
+        "estimatedMarketValue": 160,
+        "story": "",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/062/904/136/original/DM0840_001.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/062/904/136/original/DM0840_001.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/062/904/136/original/DM0840_001.png.png"
+        }
+    },
+    {
+        "sku": "DC8891-001",
+        "brand": "Nike",
+        "name": "Nike Air Force 1 Low '07 PRM Halloween (2021)",
+        "colorway": "Black/Black-Starfish-Sail",
+        "gender": "men",
+        "silhouette": "Air Force 1",
+        "releaseYear": 2021,
+        "releaseDate": "2021-11-17",
+        "retailPrice": 130,
+        "estimatedMarketValue": 126,
+        "story": "The Nike Air Force 1 ‘07 Premium ‘Halloween’ gets in the seasonal spirit with a premium black leather upper partially covered in a tonal print made up of balefully staring eyes. Contrasting orange accents settle on the nylon tongue, mesh collar lining and custom sockliner, featuring Nike branding and a creepy spider graphic. Lightweight cushioning arrives via a white rubber midsole housing a foam wedge with encapsulated Air-sole cushioning in the heel. Underfoot, an orange pivot-point rubber outsole provides grippy traction.",
+        "image": {
+            "original": "https://image.goat.com/attachments/product_template_pictures/images/062/717/431/original/831733_00.png.png",
+            "small": "https://image.goat.com/750/attachments/product_template_pictures/images/062/717/431/original/831733_00.png.png",
+            "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/062/717/431/original/831733_00.png.png"
+        }
+    }
+
+]
