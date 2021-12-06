@@ -21,6 +21,8 @@ const allRoutes = require("./routes");
 app.use("/api", allRoutes);
 
 app.use("/api/auth", require("./routes/auth.routes"))
+app.use("/api/sneakers", require("./routes/sneakers.routes"));
+
 
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes

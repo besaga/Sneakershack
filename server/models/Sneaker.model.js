@@ -8,9 +8,9 @@ const sneakerSchema = new Schema(
         colorway: String,
         gender: String,
         price: Number,
-        estimatrdMarketValue:Number,
-        realaseYear:Number,
-        story:String,
+        estimatedMarketValue: Number,
+        realaseYear: Number,
+        story: String,
         image:{
             original : String,
             small:String,
@@ -23,6 +23,6 @@ const sneakerSchema = new Schema(
     }
 );
 
-const Pena = mongoose.model('Pena', penaSchema);
+const Sneaker = mongoose.model('Sneaker', sneakerSchema );
 
-module.exports = Pena;
+module.exports = Sneaker;

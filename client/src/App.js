@@ -5,6 +5,10 @@ import SignupPage from './components/Signup'
 import LoginPage from './components/Login'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import AuthService from './services/auth.service';
+import Home from './components/Home'
+import SneakerList from './components/Sneakers/List';
+import SneakerDetails from './components/Sneakers/Details';
+
 
 class App extends Component {
 
@@ -34,9 +38,11 @@ class App extends Component {
       <div className="App">
         <Navbar storeUser={this.storeUser} loggedUser={this.state.loggedUser} /> 
         <Switch>
-            <Route path='/' exact render={() => <h1>Holax</h1> } />
+            <Route path='/' exact render={() => <Home /> } />
+            <Route path='/sneakers' exact render={() => <SneakerList />}/>
+            <Route path='/sneakers/:id' exact render={(props) => <SneakerDetails {...props} />}/>
             {this.state.loggedUser ?
-              <Redirect to="/" />
+                <Redirect to="/" />
               :
               <>
                 <Route path="/signup" render={(props) => <SignupPage {...props} storeUser={this.storeUser} />} />

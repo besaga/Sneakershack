@@ -17,7 +17,7 @@ const Navigation = ({ loggedUser, storeUser }) => {
   return (
     <Navbar bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+        <Navbar.Brand href="#home">Logo</Navbar.Brand>
         <Nav className="me-auto">
           <Nav.Link as={Link} to="/">Inicio</Nav.Link>
           {loggedUser ?
