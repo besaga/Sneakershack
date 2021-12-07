@@ -6,6 +6,10 @@ const sneakerSchema = new Schema(
         sku: String,
         name: String,
         colorway: String,
+        size:{type:Number,
+            min:35,
+            max:47
+        },
         gender: String,
         retailPrice: Number,
         estimatedMarketValue: Number,
