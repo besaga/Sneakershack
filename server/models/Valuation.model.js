@@ -15,7 +15,11 @@ const valuationSchema = new Schema(
             ref: 'Sneaker'
         },
         comment: String,
-        //stars:
+        rating: {
+            type:Number,
+            min:1,
+            max:5
+        }
     },
     {
         timestamps: true

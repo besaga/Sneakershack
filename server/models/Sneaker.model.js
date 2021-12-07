@@ -7,7 +7,7 @@ const sneakerSchema = new Schema(
         name: String,
         colorway: String,
         gender: String,
-        price: Number,
+        retailPrice: Number,
         estimatedMarketValue: Number,
         realaseYear: Number,
         story: String,

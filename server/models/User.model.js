@@ -12,7 +12,6 @@ const userSchema = new Schema(
     phoneNumber: String,
     role: { type: String, enum: ['ADMIN', 'USER'],default: 'USER'},
     products:[{ type: Schema.Types.ObjectId, ref: 'Sneaker'}],
-    valuation:[{ type: Schema.Types.ObjectId, ref: 'Valuation'}]
   },
   {
     timestamps: true
