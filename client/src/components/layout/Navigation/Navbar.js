@@ -15,20 +15,20 @@ const Navigation = ({ loggedUser, storeUser }) => {
   }
 
   return (
-    <Navbar bg="dark" variant="dark">
+   <Navbar bg="light" variant="light">
       <Container>
-        <Navbar.Brand href="#home">Logo</Navbar.Brand>
-        <Nav className="me-auto">
-          <Nav.Link as={Link} to="/">Inicio</Nav.Link>
-          {loggedUser ?
-            <Nav.Link as={"span"} onClick={logout}>Logout</Nav.Link>
-            :
-            <>
-              <Nav.Link as={Link} to="/signup">Registro</Nav.Link>
-              <Nav.Link as={Link} to="/login">Login</Nav.Link>
-            </>
-          }
-        </Nav>
+        <Nav.Link as={Link} to="/">Inicio</Nav.Link>
+          <Nav className="me-auto">
+              
+              {loggedUser ?
+              <Nav.Link as={"span"} onClick={logout}>Logout</Nav.Link>
+              :
+              <>
+                <Nav.Link as={Link} to="/signup">Registro</Nav.Link>
+                <Nav.Link as={Link} to="/login">Login</Nav.Link>
+              </>
+            }
+          </Nav>
       </Container>
     </Navbar>
 
@@ -36,3 +36,5 @@ const Navigation = ({ loggedUser, storeUser }) => {
 }
 
 export default Navigation
+
+      

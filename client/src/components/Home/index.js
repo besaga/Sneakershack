@@ -1,6 +1,8 @@
 import React from 'react'
-import Zapatillas from './images/zapatillas.jpeg'
 import { Link } from 'react-router-dom'
+
+import './../../App.css'
+
 
 
 const Home = () => {
@@ -8,14 +10,12 @@ const Home = () => {
   
 
   return (
-    <div>
-      
-         <img src={Zapatillas} />
-         <Link to={'/sneakers'}>Comprar</Link>
-         
+    <div className= "contenedor">
+         <Link className="centrado" to={'/sneakers'}>Comprar</Link>
     </div>
 
   )
 }
 
 export default Home
+
