@@ -20,3 +20,8 @@ div.contenedor {
   margin-left: -104.5px; /*104.5px is half of the button's width*/
   
 }
+
+
+.nav-position{
+    justify-content: flex-end
+}

@@ -17,15 +17,18 @@ const Navigation = ({ loggedUser, storeUser }) => {
   return (
    <Navbar bg="light" variant="light">
       <Container>
+      <div className="nav-position">
+      <Nav.Link  as={Link} to="/signup"></Nav.Link>
+      </div>
         <Nav.Link as={Link} to="/">Inicio</Nav.Link>
-          <Nav className="me-auto">
+          <Nav className="me-auto nav-position">
               
               {loggedUser ?
               <Nav.Link as={"span"} onClick={logout}>Logout</Nav.Link>
               :
               <>
-                <Nav.Link as={Link} to="/signup">Registro</Nav.Link>
-                <Nav.Link as={Link} to="/login">Login</Nav.Link>
+                <Nav.Link  as={Link} to="/signup">Registro</Nav.Link>
+                <Nav.Link  as={Link} to="/login">Login</Nav.Link>
               </>
             }
           </Nav>

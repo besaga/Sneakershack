@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import SneakerService from '../../services/sneaker.service'
+import { Container, Row, Col } from "react-bootstrap";
 
 
 
@@ -22,19 +23,21 @@ class SneakerList extends Component {
   }
   render() {
     return (
-        <div>
+        <Container>
+          <Row>
           {this.state.sneakers.map((elm, key) => {
             return (
-                <div key={key}>
+                <Col  md={4}key={key} >
                     <Link as='a' to={`/sneakers/${elm._id}`}>
                         <img src={elm.image.thumbnail} alt={elm.name} />
                         <p>{elm.brand} | {elm.name}</p>
                     </Link>
-                </div>
+                </Col>
             )
           })
           }
-        </div>
+          </Row>
+        </Container>
     )
   }
 }
