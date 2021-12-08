@@ -8,7 +8,7 @@ class CartService {
   }
 
   addProduct = (userId, productId) => this.app.post(`/${userId}/${productId}`)
-  
+  getCart = (userId) => this.app.get(`/details/${userId}`)
 }
 
 export default CartService

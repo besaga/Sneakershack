@@ -1,35 +1,44 @@
 import React from 'react'
+import CartService from "../../services/cart.service";
+import { Table} from "react-bootstrap";
 
 
 class Cart extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            userId: "",
-            products: [],
-            retailPrice: "",
-            quantity: 0
+            cart: []
         }
+
+        this.cartService = new CartService()
     }
-render(){
-    return(
-        <>
-            <h1>Tu carrito de la compra</h1>
-            {/* <td>
-                <div>
-                    <span>{this.props.name}</span>
-                </div>
-            </td>
-            <td>
-                <input type= "number" value={this.props.count} onChange={this.props.handleCountChange}></input>
-            </td>
-            <td>
-                {this.props.retailPrice}
-            </td> */}
-        </>
-    )
+
+    componentDidMount() {
+
+        this.cartService
+        .getCart(this.props.loggedUser._id)
+        .then(response => this.setState({cart: response.data}))
+        .catch(err => console.log(err))
+      }
+    
+    render(){
+        return(
+            <>
+
+            {this.state.cart.length === 0 ?
+                <h1>Loading...</h1>
+                :
+                <>
+                {this.state.cart[0].products.map(product => {
+                    return <p>{product.name},{product.retailPrice},{product.colorway}</p>
+                })}
+                </>
+            }
+            </>
+        )
+    }
+    
 }
 
-}
 
 export default Cart

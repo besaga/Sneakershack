@@ -41,7 +41,7 @@ class App extends Component {
             <Route path='/' exact render={() => <Home /> } />
             <Route path='/sneakers' exact render={() => <SneakerList />}/>
             <Route path='/sneakers/:id' exact render={(props) => <SneakerDetails loggedUser={this.state.loggedUser} {...props} />}/>
-            <Route path='/cart' exact render={(props) => <Cart/>}/>
+            <Route path='/cart' exact render={(props) => <Cart loggedUser={this.state.loggedUser}/>}/>
             {this.state.loggedUser ?
                 <Redirect to="/" />
               :

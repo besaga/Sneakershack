@@ -13,7 +13,7 @@ module.exports = app => {
         maxAge: 1000 * 60 * 60 * 24
       },
       store: MongoStore.create({
-        mongoUrl: process.env.MONGODB_URI || 'mongodb://localhost/server'
+        mongoUrl: process.env.MONGODB_URI ||'mongodb+srv://sneakershack:sneakershack@cluster0.f83if.mongodb.net/test'
       })
     })
   );

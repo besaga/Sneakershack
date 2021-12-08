@@ -22,9 +22,13 @@ const Navigation = ({ loggedUser, storeUser }) => {
       </div>
         <Nav.Link as={Link} to="/">Inicio</Nav.Link>
           <Nav className="me-auto nav-position">
+          <Nav.Link  as={Link} to="/cart">logocarritocompra</Nav.Link>
+  
               
               {loggedUser ?
+              
               <Nav.Link as={"span"} onClick={logout}>Logout</Nav.Link>
+              
               :
               <>
                 <Nav.Link  as={Link} to="/signup">Registro</Nav.Link>
