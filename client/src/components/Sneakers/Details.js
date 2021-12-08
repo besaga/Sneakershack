@@ -2,27 +2,34 @@ import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import SneakerService from "./../../services/sneaker.service";
 import { Link } from 'react-router-dom'
+import CartService from "../../services/cart.service";
 
 
 class SneakerDetails extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
 
     this.state = {
       sneaker: undefined //metemos todo el objeto sneaker y así no hay que detallar los campos y no hay que hacer nada si cambia el modelo
     }
 
     this.service = new SneakerService()
+    this.cartService = new CartService()
   }
 
   componentDidMount() {
-    const id = this.props.match.params.id
 
-    this.service.getOneSneaker(id)
+    this.service.getOneSneaker(this.props.match.params.id)
       .then(response => {
         this.setState({ sneaker: response.data })
       })
       .catch(err => console.log(err))
+  }
+
+  handleClick(userId) {
+    this.cartService.addProduct(userId, this.props.match.params.id)
+    .then(res => console.log(res.data))
+    .catch(err => console.log(err))
   }
 
   render() {
@@ -47,8 +54,8 @@ class SneakerDetails extends Component {
                 <p>Precio de mercado: {sneaker.estimatedMarketValue}€</p>
                 <p>{sneaker.story}</p>
                 <div className= "comprar">
-                   <Link className="centrado" to={''}>Comprar</Link>
-                   <Link className="centrado" to={'/sneakers'}>Zapatillas</Link>
+                   <Link className="centrado" to={'/'}>Comprar</Link>
+                   <Link onClick={() => this.handleClick(this.props.loggedUser._id)} className="centrado" to={'/cart'}>Zapatillas</Link>
                </div>
                 {/* Aquí hay que mter los datos de la zapatilla que queramos */}
             </article>

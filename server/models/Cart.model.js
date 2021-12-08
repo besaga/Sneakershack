@@ -1,3 +1,5 @@
+
+
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
@@ -6,7 +8,8 @@ const CartSchema = new Schema(
         //el usuario es un unico genera mongo un id por el que se le reconoce
         userId:{
             type: Schema.Types.ObjectId,
-            ref: 'User'
+            ref: 'User',
+            required: true
         },
         // lo metemos en un array porque puede comprar varias zapatillas
         products:[{
@@ -19,6 +22,6 @@ const CartSchema = new Schema(
     }
 );
 
-const Cart = mongoose.model('Cart', cartSchema );
+const Cart = mongoose.model('Cart', CartSchema );
 
 module.exports = Cart;

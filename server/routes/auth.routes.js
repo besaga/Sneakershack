@@ -3,9 +3,8 @@ const User = require("../models/User.model")
 const bcrypt = require("bcrypt")
 const bcryptSalt = 10
 
-
-
 //Singup
+
 router.post('/signup', (req, res) => {
 
     const { email, password } = req.body

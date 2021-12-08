@@ -1,23 +1,9 @@
 const router = require("express").Router();
 
-router.get("/", (req, res, next) => {
-  res.json("All good in here");
+module.exports = app => {
+  //app.use("/api", require("./auth.routes"));
+  app.use("/api/auth", require("./auth.routes"));
+  app.use("/api/cart", require("./cart.routes"));
+  app.use("/api/sneakers", require("./sneakers.routes"));
 
-});
-
-
-module.exports = router;
-
-
-
-// module.exports = app => {
-
-//   //Base URLS
-//   app.use('/', require('./base.routes.js'))
-//   app.use("/auth", require("./auth.routes"))
-//   app.use("/game", require("./game.routes"))
-//   app.use("/pena", require("./pena.routes"))
-//   app.use("/nodemailer", require("./nodemailer.routes"))
-
-
-// }
+}

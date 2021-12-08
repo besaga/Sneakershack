@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component} from 'react'
 
 class SearchBar extends Component {
 
@@ -6,25 +6,24 @@ class SearchBar extends Component {
         super(props)
 
         this.state = {
-            sneakers:[]
+            text: ""
         }
     }
 
     handleChange = (e) => {
 
-        "/sneakers?name=textoDeLaBarra"
+        let input = e.currentTarget.value.toLowerCase()
+        this.setState({
+            text: input
+        })
 
-        // let input = e.currentTarget.value.toLowerCase()
-    
-        // let filteredProducts = this.props.sneakers.filter(sneaker => sneaker.name.toLowerCase().includes(input))
-    
-        // this.props.sneakers(filteredProducts);
+        this.props.refreshSneakers(this.state.text)
       }
 
     render() {
         return (
             <div>
-                <input type="search" onChange={this.handleChange} value={this.state.name} name="name" />
+                <input type="search" onChange={this.handleChange} value={this.state.text} name="text" />
             </div>
         )
     }

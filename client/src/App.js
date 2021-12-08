@@ -1,14 +1,14 @@
 import './App.css';
 import { Component } from 'react'
 import Navbar from './components/layout/Navigation/Navbar'
-import SignupPage from './components/Signup'
-import LoginPage from './components/Login'
+import SignupPage from './components/Signup/Signup'
+import LoginPage from './components/Login/Login'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import AuthService from './services/auth.service';
-import Home from './components/Home'
+import Home from './components/Home/Home'
 import SneakerList from './components/Sneakers/List';
 import SneakerDetails from './components/Sneakers/Details';
-
+import Cart from './components/Cart/Cart';
 
 class App extends Component {
 
@@ -40,7 +40,8 @@ class App extends Component {
         <Switch>
             <Route path='/' exact render={() => <Home /> } />
             <Route path='/sneakers' exact render={() => <SneakerList />}/>
-            <Route path='/sneakers/:id' exact render={(props) => <SneakerDetails {...props} />}/>
+            <Route path='/sneakers/:id' exact render={(props) => <SneakerDetails loggedUser={this.state.loggedUser} {...props} />}/>
+            <Route path='/cart' exact render={(props) => <Cart/>}/>
             {this.state.loggedUser ?
                 <Redirect to="/" />
               :

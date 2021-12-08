@@ -17,11 +17,14 @@ require("./config/session.config")(app)
 
 // 👇 Start handling routes here
 // Contrary to the views version, all routes are controlled from the routes/index.js
-const allRoutes = require("./routes");
-app.use("/api", allRoutes);
 
-app.use("/api/auth", require("./routes/auth.routes"))
-app.use("/api/sneakers", require("./routes/sneakers.routes"));
+require("./routes")(app)
+// app.use("/api/cart", require("./routes/cart.routes"));
+// const allRoutes = require("./routes");
+// app.use("/api", allRoutes);
+//app.use("/api/auth", require("./routes/auth.routes"))
+// app.use("/api/sneakers", require("./routes/sneakers.routes"));
+
 
 
 

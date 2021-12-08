@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Container, Form, Button, Row, Col } from 'react-bootstrap'
-import AuthService from './../../services/auth.service'
+import AuthService from '../../services/auth.service'
 
 class LoginPage extends Component {
   constructor(props) {
@@ -20,8 +20,6 @@ class LoginPage extends Component {
     this.authService.login(this.state.email, this.state.password)
       .then(response => {
         this.props.storeUser(response.data)
-
-        // this.props.history.push("/coaster-list")
 
       })
       .catch(err => console.log(err.response.data.message))
