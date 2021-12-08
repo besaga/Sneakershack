@@ -1,9 +1,19 @@
 const router = require("express").Router()
 const Cart = require("../models/Cart.model")
 
-router.get("/:userId") {
-    
-}
+router.get("/details/:userId", (req, res)=>{
+
+    const {userId} = req.params
+
+    Cart
+    .find({userId: userId})
+    .populate({
+        path: 'products',
+        model: 'Sneaker'
+    })
+    .then(cart => res.status(200).json(cart))
+    .catch(err => res.status(500).json({ code: 500, message: "Error retrieving cart", err }))
+})
 
 router.post("/:userId/:productId", (req, res) => {
 
