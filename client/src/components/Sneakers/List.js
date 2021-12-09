@@ -42,7 +42,7 @@ class SneakerList extends Component {
           <SearchBar refreshSneakers={this.refreshSneakers} />
           {this.state.sneakers.map((elm, key) => {
             return (
-                <Col  md={4}key={key} >
+                <Col md={4} key={key}>
                     <Link as='a' to={`/sneakers/${elm._id}`}>
                         <img src={elm.image.thumbnail} alt={elm.name} />
                         <p>{elm.brand} | {elm.name}</p>

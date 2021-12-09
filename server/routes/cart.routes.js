@@ -12,7 +12,7 @@ router.get("/details/:userId", (req, res)=>{
         model: 'Sneaker'
     })
     .then(cart => res.status(200).json(cart))
-    .catch(err => res.status(500).json({ code: 500, message: "Error retrieving cart", err }))
+    .catch(err => console.log(err))
 })
 
 router.post("/:userId/:productId", (req, res) => {

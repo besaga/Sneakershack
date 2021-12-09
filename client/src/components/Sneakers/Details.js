@@ -10,7 +10,8 @@ class SneakerDetails extends Component {
     super(props)
 
     this.state = {
-      sneaker: undefined //metemos todo el objeto sneaker y así no hay que detallar los campos y no hay que hacer nada si cambia el modelo
+      sneaker: undefined, //metemos todo el objeto sneaker y así no hay que detallar los campos y no hay que hacer nada si cambia el modelo
+      purchase: false
     }
 
     this.service = new SneakerService()
@@ -28,7 +29,7 @@ class SneakerDetails extends Component {
 
   handleClick(userId) {
     this.cartService.addProduct(userId, this.props.match.params.id)
-    .then(res => console.log(res.data))
+    .then(res => this.setState({purchase: true}))
     .catch(err => console.log(err))
   }
 
@@ -54,8 +55,15 @@ class SneakerDetails extends Component {
                 <p>Precio de mercado: {sneaker.estimatedMarketValue}€</p>
                 <p>{sneaker.story}</p>
                 <div className= "comprar">
-                   <Link className="centrado" to={'/'}>Comprar</Link>
-                   <Link onClick={() => this.handleClick(this.props.loggedUser._id)} className="centrado" to={'/cart'}>Zapatillas</Link>
+                   <Link className="centrado" to={'/sneakers'}>Volver a Zapatillas</Link>
+                   <button onClick={() => this.handleClick(this.props.loggedUser._id)} className="centrado">Comprar</button>
+                   { this.state.purchase && 
+                      <div>Enhorabuena, tu producto se ha añaddo al carrito.
+                        <Link to="/cart">Ir al carrito</Link>
+                        <Link to="/sneakers">Seguir comprando</Link>
+                      </div>
+                    }
+                   
                </div>
              
             </article>

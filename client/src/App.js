@@ -16,7 +16,8 @@ class App extends Component {
     super(props)
 
     this.state = {
-      loggedUser: undefined
+      loggedUser: undefined,
+      productsQuantity: 15
     }
 
     this.authService = new AuthService()
@@ -32,16 +33,19 @@ class App extends Component {
     this.setState({ loggedUser: user })
   }
 
+  storeProductsQuantity = (quantity) => {
+    this.setState({productsQuantity: quantity})
+  }
 
   render() {
     return (
       <div className="App">
-        <Navbar storeUser={this.storeUser} loggedUser={this.state.loggedUser} /> 
+        <Navbar productsQuantity={this.state.productsQuantity} storeUser={this.storeUser} loggedUser={this.state.loggedUser} />
         <Switch>
             <Route path='/' exact render={() => <Home /> } />
             <Route path='/sneakers' exact render={() => <SneakerList />}/>
             <Route path='/sneakers/:id' exact render={(props) => <SneakerDetails loggedUser={this.state.loggedUser} {...props} />}/>
-            <Route path='/cart' exact render={(props) => <Cart loggedUser={this.state.loggedUser}/>}/>
+            <Route path='/cart' exact render={(props) => <Cart loggedUser={this.state.loggedUser} storeUser={this.storeUser} storeProductsQuantity={this.storeProductsQuantity}/>}/>
             {this.state.loggedUser ?
                 <Redirect to="/" />
               :

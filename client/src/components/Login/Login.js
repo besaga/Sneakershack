@@ -45,7 +45,7 @@ class LoginPage extends Component {
               <Form onSubmit={this.handleSubmit}>
                 <Form.Group className="mb-3" controlId="email">
                   <Form.Label>Email</Form.Label>
-                  <Form.Control onChange={this.handleInputChange} value={this.state.email} name="email" type="email" placeholder="Elige un nombre de usuario" />
+                  <Form.Control onChange={this.handleInputChange} value={this.state.email} name="email" type="email" placeholder="Nombre de usuario" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="password">
