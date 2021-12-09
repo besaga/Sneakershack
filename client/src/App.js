@@ -9,6 +9,7 @@ import Home from './components/Home/Home'
 import SneakerList from './components/Sneakers/List';
 import SneakerDetails from './components/Sneakers/Details';
 import Cart from './components/Cart/Cart';
+import Profile from './components/Profile/Profile'
 
 class App extends Component {
 
@@ -17,7 +18,7 @@ class App extends Component {
 
     this.state = {
       loggedUser: undefined,
-      productsQuantity: 15
+      productsQuantity: 0
     }
 
     this.authService = new AuthService()
@@ -30,7 +31,7 @@ class App extends Component {
   }
 
   storeUser = (user) => {
-    this.setState({ loggedUser: user })
+    this.setState({ loggedUser: user, productsQuantity: user?.products.length })
   }
 
   storeProductsQuantity = (quantity) => {
@@ -44,8 +45,9 @@ class App extends Component {
         <Switch>
             <Route path='/' exact render={() => <Home /> } />
             <Route path='/sneakers' exact render={() => <SneakerList />}/>
-            <Route path='/sneakers/:id' exact render={(props) => <SneakerDetails loggedUser={this.state.loggedUser} {...props} />}/>
+            <Route path='/sneakers/:id' exact render={(props) => <SneakerDetails {...props} loggedUser={this.state.loggedUser}  />}/>
             <Route path='/cart' exact render={(props) => <Cart loggedUser={this.state.loggedUser} storeUser={this.storeUser} storeProductsQuantity={this.storeProductsQuantity}/>}/>
+            <Route path='/profile' exact render={(props) => <Profile loggedUser={this.state.loggedUser} storeUser={this.storeUser}/>}/>
             {this.state.loggedUser ?
                 <Redirect to="/" />
               :

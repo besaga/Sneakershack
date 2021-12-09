@@ -8,7 +8,7 @@ class LoginPage extends Component {
 
     this.state = {
       email: "",
-      password: ""
+      password: "",
     }
 
     this.authService = new AuthService()
@@ -27,7 +27,6 @@ class LoginPage extends Component {
 
   handleInputChange = (e) => {
     const { name, value } = e.currentTarget
-
     this.setState({ [name]: value })
   }
 
@@ -36,12 +35,9 @@ class LoginPage extends Component {
       (
         <Container>
           <Row>
-
             <Col md={{ span: 4, offset: 4 }}>
               <h2>Login</h2>
-
               <hr />
-
               <Form onSubmit={this.handleSubmit}>
                 <Form.Group className="mb-3" controlId="email">
                   <Form.Label>Email</Form.Label>

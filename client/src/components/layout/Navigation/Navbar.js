@@ -23,10 +23,11 @@ const Navigation = ({ loggedUser, storeUser, productsQuantity }) => {
         <Nav.Link as={Link} to="/">Inicio</Nav.Link>
           <Nav className="me-auto nav-position">
           <Nav.Link  as={Link} to="/sneakers">Zapatillas</Nav.Link>
+          <Nav.Link  as={Link} to="/profile">editar usuario</Nav.Link>
               {loggedUser ?
                 <>
                   <Nav.Link  as={Link} to="/cart">Tu Carrito {productsQuantity}</Nav.Link>
-                  {/* <Nav.Link  as={Link} to="/user">editar usuario</Nav.Link> */}
+                  
                   <Nav.Link as={"span"} onClick={logout}>Logout</Nav.Link>
                 </>
               :

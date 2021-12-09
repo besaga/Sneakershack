@@ -21,10 +21,10 @@ class Cart extends React.Component {
         .then(response => {
             this.props.storeUser(response.data)
             return this.cartService
-            .getCart(this.props.loggedUser._id)
+            .getCart(response.data._id)
         })
         .then(response => {
-            this.setState({cart: response.data, productsQuantity: 2})
+            this.setState({cart: response.data})
             this.setState({productsQuantity: response.data[0].products.length})
             this.props.storeProductsQuantity(this.state.productsQuantity)
         })
@@ -39,7 +39,7 @@ class Cart extends React.Component {
             <>
 
             {this.state.cart.length === 0 ?
-                <h1>Loading...</h1>
+                <h1>No tienes elementos en tu carrito...</h1>
                 :
                 <Table>
                     <thead>
