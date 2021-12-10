@@ -3,23 +3,33 @@ const Schema = mongoose.Schema;
 
 const sneakerSchema = new Schema(
     {
-        sku: String,
-        name: String,
+        sku: { 
+            type: String, 
+            unique: true, 
+            required: true
+        },
+        name: { 
+            type: String, 
+            unique: true, 
+            required: true},
         colorway: String,
-        size:{type:Number,
+        size:{
+            type:Number,
             min:35,
             max:47
         },
         gender: String,
-        retailPrice: Number,
+        retailPrice: { 
+            type: Number,
+            required:true 
+        },
         estimatedMarketValue: Number,
         realaseYear: Number,
         story: String,
-        image:{
+        image: {
             original : String,
             small:String,
             thumbnail:String,
-
         },
     },
     {

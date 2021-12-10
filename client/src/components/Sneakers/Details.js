@@ -4,22 +4,19 @@ import SneakerService from "./../../services/sneaker.service";
 import { Link } from 'react-router-dom'
 import CartService from "../../services/cart.service";
 
-
 class SneakerDetails extends Component {
   constructor(props) {
     super(props)
 
     this.state = {
-      sneaker: undefined, //metemos todo el objeto sneaker y así no hay que detallar los campos y no hay que hacer nada si cambia el modelo
+      sneaker: undefined,
       purchase: false
     }
-
     this.service = new SneakerService()
     this.cartService = new CartService()
   }
 
   componentDidMount() {
-
     this.service.getOneSneaker(this.props.match.params.id)
       .then(response => {
         this.setState({ sneaker: response.data })
@@ -41,11 +38,9 @@ class SneakerDetails extends Component {
         {sneaker && <Row>
           <Col md={6}>
             <img src={sneaker.image.thumbnail} alt={sneaker.name} />
-            {/* esta imagen podría ser clicable para agrandar y mostrar el sneaker.image.original */}
           </Col>
 
           <Col md={6}>
-
             <article>
                 <h2>{sneaker.name} | {sneaker.brand}</h2>
                 <p>{sneaker.name} </p>
@@ -63,9 +58,7 @@ class SneakerDetails extends Component {
                         <Link to="/sneakers">Seguir comprando</Link>
                       </div>
                     }
-                   
                </div>
-             
             </article>
           </Col>
         </Row> }

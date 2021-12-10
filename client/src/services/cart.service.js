@@ -6,7 +6,7 @@ class CartService {
       baseURL: 'http://localhost:5005/api/cart'
     })
   }
-
+  
   addProduct = (userId, productId) => this.app.post(`/${userId}/${productId}`)
   getCart = (userId) => this.app.get(`/details/${userId}`)
 }

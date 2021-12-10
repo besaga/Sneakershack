@@ -3,7 +3,6 @@ import CartService from "../../services/cart.service";
 import { Table } from "react-bootstrap";
 import AuthService from '../../services/auth.service';
 
-
 class Cart extends React.Component {
     constructor(props) {
         super(props)
@@ -11,7 +10,6 @@ class Cart extends React.Component {
             cart: [],
             productsQuantity: ''
         }
-
         this.cartService = new CartService()
         this.authService = new AuthService()
     }
@@ -29,15 +27,12 @@ class Cart extends React.Component {
             this.props.storeProductsQuantity(this.state.productsQuantity)
         })
         .catch(err => this.props.storeUser(null))
-
     }
     
     render(){
         let totalBeforeTax = 0;
-
         return(
             <>
-
             {this.state.cart.length === 0 ?
                 <h1>No tienes elementos en tu carrito...</h1>
                 :
@@ -46,7 +41,6 @@ class Cart extends React.Component {
                         <tr><th>Product</th><th>Colorway</th><th>Price</th></tr>
                     </thead>
                     <tbody>
-                        
                         {this.state.cart[0].products.map((product, key) => {
                             totalBeforeTax+=product.retailPrice
                             return <tr key={key}>
@@ -64,8 +58,6 @@ class Cart extends React.Component {
             </>
         )
     }
-    
 }
-
 
 export default Cart

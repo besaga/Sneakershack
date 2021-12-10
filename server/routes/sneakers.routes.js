@@ -1,7 +1,6 @@
 const router = require("express").Router()
 const Sneaker = require("../models/Sneaker.model")
 
-
 router.get("/", (req, res) => {
   Sneaker.find()
     .then(allSneakers => res.json(allSneakers))
@@ -15,6 +14,5 @@ router.get("/:id", (req, res) => {
     .then(theSneaker => res.json(theSneaker))
     .catch(err => res.json({ err, errMessage: "Problema buscando un Sneakers" }))
 })
-
 
 module.exports = router

@@ -5,22 +5,18 @@ import AuthService from '../../services/auth.service'
 class LoginPage extends Component {
   constructor(props) {
     super(props)
-
     this.state = {
       email: "",
       password: "",
     }
-
     this.authService = new AuthService()
   }
 
   handleSubmit = (e) => {
     e.preventDefault();
-
     this.authService.login(this.state.email, this.state.password)
       .then(response => {
         this.props.storeUser(response.data)
-
       })
       .catch(err => console.log(err.response.data.message))
   }
@@ -58,7 +54,6 @@ class LoginPage extends Component {
         </Container>)
     )
   }
-
 }
 
 export default LoginPage

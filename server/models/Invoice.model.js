@@ -6,7 +6,6 @@ const salesSchema = new Schema(
         userId:{
             type: Schema.Types.ObjectId,
             ref: 'User',
-            
         },
         cartId:[{
             type: Schema.Types.ObjectId,
@@ -15,7 +14,6 @@ const salesSchema = new Schema(
         date:{ type: Date, required: true },
         totalPrice:{ type: Number }
     },
-
     {
         timestamps: true
     }

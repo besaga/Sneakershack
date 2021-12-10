@@ -8,6 +8,7 @@ const Home = (props) => {
       <div className= "contenedor">
           <Link className="centrado" to={'/sneakers'}>Comprar</Link>
       </div>
+
     </>
   )
 }

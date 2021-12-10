@@ -6,7 +6,6 @@ class SneakerService {
       baseURL: 'http://localhost:5005/api'
     })
   }
-
   getAllSneakers = () => this.app.get("/sneakers")
   getOneSneaker = (id) => this.app.get(`/sneakers/${id}`)
 }

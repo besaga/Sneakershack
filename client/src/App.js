@@ -12,7 +12,6 @@ import Cart from './components/Cart/Cart';
 import Profile from './components/Profile/Profile'
 
 class App extends Component {
-
   constructor(props) {
     super(props)
 
@@ -47,7 +46,7 @@ class App extends Component {
             <Route path='/sneakers' exact render={() => <SneakerList />}/>
             <Route path='/sneakers/:id' exact render={(props) => <SneakerDetails {...props} loggedUser={this.state.loggedUser}  />}/>
             <Route path='/cart' exact render={(props) => <Cart loggedUser={this.state.loggedUser} storeUser={this.storeUser} storeProductsQuantity={this.storeProductsQuantity}/>}/>
-            <Route path='/profile' exact render={(props) => <Profile loggedUser={this.state.loggedUser} storeUser={this.storeUser}/>}/>
+            <Route path='/profile' exact render={(props) => <Profile loggedUser={this.state.loggedUser}/>}/>
             {this.state.loggedUser ?
                 <Redirect to="/" />
               :

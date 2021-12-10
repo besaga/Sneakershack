@@ -5,18 +5,15 @@ import AuthService from '../../services/auth.service'
 class SignupPage extends Component {
   constructor(props) {
     super(props)
-
     this.state = {
       email: "",
       password: ""
     }
-
     this.authService = new AuthService()
   }
 
   handleSubmit = (e) => {
     e.preventDefault();
-
     this.authService.signup(this.state.email, this.state.password)
       .then(response => {
         this.props.storeUser(response.data)
@@ -26,7 +23,6 @@ class SignupPage extends Component {
 
   handleInputChange = (e) => {
     const { name, value } = e.currentTarget
-
     this.setState({ [name]: value })
   }
 
@@ -57,7 +53,6 @@ class SignupPage extends Component {
       </Container>
     )
   }
-
 }
 
 export default SignupPage
