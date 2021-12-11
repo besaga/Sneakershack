@@ -1,3 +1,4 @@
+/* boton comprar style */
 .contenedor {
     display: flex;
     justify-content: center;
@@ -15,4 +16,15 @@
 .contenedor:hover {
     background-color: rbga(1,1,1,0.5);
     color: white;
+}
+
+.carousel-images {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* boton de comprar */
+.button-name{
+    text-decoration: none;
+    color: black;
 }

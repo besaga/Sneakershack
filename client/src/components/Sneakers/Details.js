@@ -3,6 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import SneakerService from "./../../services/sneaker.service";
 import { Link } from 'react-router-dom'
 import CartService from "../../services/cart.service";
+import './Sneakers.css'
+
 
 class SneakerDetails extends Component {
   constructor(props) {
@@ -34,7 +36,7 @@ class SneakerDetails extends Component {
     const { sneaker } = this.state
 
     return (
-      <Container>
+      <Container >
         {sneaker && <Row>
           <Col md={6}>
             <img src={sneaker.image.thumbnail} alt={sneaker.name} />
@@ -50,11 +52,11 @@ class SneakerDetails extends Component {
                 <p>Precio de mercado: {sneaker.estimatedMarketValue}€</p>
                 <p>{sneaker.story}</p>
                 <div className= "comprar">
-                   <Link className="centrado" to={'/sneakers'}>Volver a Zapatillas</Link>
+                   <Link className="button-name"to={'/sneakers'}>Volver a Zapatillas</Link>
                    <button onClick={() => this.handleClick(this.props.loggedUser._id)} className="centrado">Comprar</button>
                    { this.state.purchase && 
                       <div>Enhorabuena, tu producto se ha añaddo al carrito.
-                        <Link to="/cart">Ir al carrito</Link>
+                        <Link to="/cart" >Ir al carrito</Link>
                         <Link to="/sneakers">Seguir comprando</Link>
                       </div>
                     }

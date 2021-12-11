@@ -29,7 +29,7 @@ class Profile extends Component {
     this.profileService
       .editProfile(this.props.loggedUser._id, this.state)
       .then((response) => {
-        <Redirect to="/"></Redirect>
+        console.log(response);
       })
       .catch((err) => console.log(err));
   };

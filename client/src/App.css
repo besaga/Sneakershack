@@ -1,11 +1,13 @@
 *{
   margin: 0px;
   padding: 0px;
+  text-decoration: none;
 }
 
 body {
-  background: rgb(238,174,202);
-  background: linear-gradient(281deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  /* background: rgb(238,174,202);
+  background: linear-gradient(281deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
+  background-color:rgb(233, 222, 206)
 }
 
 div.contenedor {

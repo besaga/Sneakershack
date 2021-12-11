@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import SneakerService from '../../services/sneaker.service'
 import { Container, Row, Col } from "react-bootstrap";
 import SearchBar from '../SearchBar/SearchBar';
+import './Sneakers.css'
+
 
 
 
@@ -43,7 +45,7 @@ class SneakerList extends Component {
           {this.state.sneakers.map((elm, key) => {
             return (
                 <Col md={4} key={key}>
-                    <Link as='a' to={`/sneakers/${elm._id}`}>
+                    <Link  className="button-name" as='a' to={`/sneakers/${elm._id}`}>
                         <img src={elm.image.thumbnail} alt={elm.name} />
                         <p>{elm.brand} | {elm.name}</p>
                     </Link>
