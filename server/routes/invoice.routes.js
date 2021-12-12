@@ -43,6 +43,13 @@ router.post("/:userId", (req, res) => {
         .catch(err => console.log(err))
 })
 
+router.get("/all/:userId", (req, res)=>{
+    const {userId} = req.params
+    Invoice.find({userId: userId})
+        .then(invoices => res.status(200).json(invoices))
+        .catch(err => res.status(500).json(err))
+})
+
 router.get("/:invoiceId", (req, res)=>{
     const {invoiceId} = req.params
     Invoice.findOne({_id: invoiceId})

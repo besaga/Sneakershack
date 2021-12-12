@@ -9,6 +9,7 @@ class InvoiceService {
   
   confirmPurchase = (userId) => this.app.post(`/${userId}`)
   getInvoice = (invoiceId) => this.app.get(`/${invoiceId}`)
+  getAllInvoices = (userId) => this.app.get(`/all/${userId}`)
 }
 
 export default InvoiceService
