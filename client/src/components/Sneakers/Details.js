@@ -26,17 +26,16 @@ class SneakerDetails extends Component {
       .catch(err => console.log(err))
   }
 
-  handleClick(userId) {
-    this.cartService.addProduct(userId, this.props.match.params.id)
-    .then(res => this.setState({purchase: true}))
-    .catch(err => console.log(err))
+  handleClick = (userId, productId) => {
+    this.props.addCartItem(userId, productId)
+    this.setState({purchase: true})
   }
 
   render() {
     const { sneaker } = this.state
 
     return (
-      <Container >
+      <Container>
         {sneaker && <Row>
           <Col md={6}>
             <img src={sneaker.image.thumbnail} alt={sneaker.name} />
@@ -53,7 +52,10 @@ class SneakerDetails extends Component {
                 <p>{sneaker.story}</p>
                 <div className= "comprar">
                    <Link className="button-name"to={'/sneakers'}>Volver a Zapatillas</Link>
-                   <button onClick={() => this.handleClick(this.props.loggedUser._id)} className="centrado">Comprar</button>
+                   {this.props.loggedUser
+                      ? <button onClick={() => this.handleClick(this.props.loggedUser._id, sneaker._id)} className="centrado">Comprar</button>
+                      : <Link to="/login">Login para comprar</Link>
+                   }
                    { this.state.purchase && 
                       <div>Enhorabuena, tu producto se ha añaddo al carrito.
                         <Link to="/cart" >Ir al carrito</Link>

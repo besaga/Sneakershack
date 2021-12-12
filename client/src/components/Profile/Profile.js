@@ -1,35 +1,32 @@
 import React, { Component } from "react";
 import { Form, Row, Col, Container, Button } from "react-bootstrap";
 import ProfileService from "../../services/profile.service";
-import { Redirect } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import './Profile.css';
 
 class Profile extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      email: this.props.loggedUser.email, // ver con Sara porqué aparece el email y luego casca al refrescar
-      password: "",
-      newPassword: "",
-      firstName: "",
-      lastName: "",
-      address: {
-        street: "",
-        numberStreet: "",
-        floor: "",
-        cp: 0,
-      },
-      phoneNumber: this.props.loggedUser.phoneNumber,
+        user: undefined,
+        saved: false
     };
     this.profileService = new ProfileService();
+  }
+
+  componentWillMount() {
+    this.profileService.getProfile(this.props.loggedUser._id)
+        .then(response => this.setState({user: response.data.user}))
+        .catch(err => console.log(err))
   }
 
   handleSubmit = (e) => {
     e.preventDefault();
     this.profileService
-      .editProfile(this.props.loggedUser._id, this.state)
+      .editProfile(this.props.loggedUser._id, this.state.user)
       .then((response) => {
-        console.log(response);
+        this.props.storeUser(this.state.user)
+        this.setState({saved: true})
       })
       .catch((err) => console.log(err));
   };
@@ -39,26 +36,29 @@ class Profile extends Component {
         const { name, value } = e.currentTarget;
 
         this.setState((prevState) => ({
-            address: {
-                ...prevState.address,
-                [name]: value
+            user: {
+                address: {
+                    ...prevState.address,
+                    [name]: value
+                }
             }
         }))
     }
 
     const { name, value } = e.currentTarget;
-    this.setState({ [name]: value });
+    this.setState({ user: {[name]: value }});
   };
 
   render() {
     return this.props.loggedUser ? (
       <Container className="form-style ">
         <Row>
+        { this.state.saved && <p>Guardado con éxito <button onClick={() => this.setState({saved: false})}>Seguir en el perfil</button> <Link to="/sneakers">Ir a comprar</Link></p> }
           <Form onSubmit={this.handleSubmit}>
                 <Col md={12}>
                     <Form.Group as={Row} className="mb-7">
                         <Form.Label>Email</Form.Label>
-                        <Form.Control onChange={this.handleInputChange} name="email" plaintext readOnly value={this.state.email}/>
+                        <Form.Control onChange={this.handleInputChange} name="email" plaintext readOnly value={this.state?.user?.email}/>
                     </Form.Group>
               </Col>
               <Col md={12}>
@@ -70,47 +70,48 @@ class Profile extends Component {
               <Col md={12}>
                 <Form.Group as={Row}>
                   <Form.Label>Fist name</Form.Label>
-                  <Form.Control name="firstName" onChange={this.handleInputChange} type="text" placeholder="John" value={this.state.firstName}/>
+                  <Form.Control name="firstName" onChange={this.handleInputChange} type="text" placeholder="John" value={this.state?.user?.firstName}/>
                 </Form.Group>
               </Col>
               <Col md={12}>
                 <Form.Group as={Row}>
                   <Form.Label>Last name</Form.Label>
-                  <Form.Control onChange={this.handleInputChange} name="lastName" type="text" placeholder="Smith" value={this.state.lastName}/>
+                  <Form.Control onChange={this.handleInputChange} name="lastName" type="text" placeholder="Smith" value={this.state?.user?.lastName}/>
                 </Form.Group>
               </Col>
             <Col md={12}>
             <Form.Group as={Row}>
               <Form.Label>Phone</Form.Label>
-                <Form.Control onChange={this.handleInputChange} name="phoneNumber" type="tel" placeholder="657676767" value={this.state.phoneNumber}/>
+                <Form.Control onChange={this.handleInputChange} name="phoneNumber" type="tel" placeholder="657676767" value={this.state?.user?.phoneNumber}/>
             </Form.Group>
              </Col>
              <Col md={12}>
             <Form.Group as={Row}>
               <Form.Label>Street</Form.Label>
-                <Form.Control onChange={(e) => this.handleInputChange(e, true)} name="street" type="text" placeholder="Elm Street" value={this.state.address.street ? this.state.address.street : null}/>
+                <Form.Control onChange={(e) => this.handleInputChange(e, true)} name="street" type="text" placeholder="Elm Street" value={this.state?.user?.address?.street}/>
             </Form.Group>
             </Col>
             <Col md={12}>
             <Form.Group as={Row}>
               <Form.Label>Number street</Form.Label>
-                <Form.Control onChange={(e) => this.handleInputChange(e, true)} name="numberStreet" type="text" placeholder="11" value={this.state.address.numberStreet ? this.state.address.numberStreet : null}/>
+                <Form.Control onChange={(e) => this.handleInputChange(e, true)} name="numberStreet" type="text" placeholder="11" value={this.state?.user?.address?.numberStreet}/>
             </Form.Group>
             </Col>
             <Col md={12}>
             <Form.Group as={Row}>
               <Form.Label>Floor</Form.Label>
-                <Form.Control onChange={(e) => this.handleInputChange(e, true)} name="floor" type="text" placeholder="1º A" value={this.state.address.floor ? this.state.address.floor : null}/>
+                <Form.Control onChange={(e) => this.handleInputChange(e, true)} name="floor" type="text" placeholder="1º A" value={this.state?.user?.address?.floor}/>
             </Form.Group>
             </Col>
             <Col md={12}>
             <Form.Group as={Row}>
               <Form.Label>Postal Code</Form.Label>
-                <Form.Control onChange={(e) => this.handleInputChange(e, true)} name="cp" type="text" placeholder="28050" value={this.state.address.cp ? this.state.address.cp : null}/>
+                <Form.Control onChange={(e) => this.handleInputChange(e, true)} name="cp" type="text" placeholder="28050" value={this.state?.user?.address?.cp}/>
             </Form.Group>
             </Col>
            
             <Button type="submit">Submit</Button>
+            
           </Form>
         </Row>
       </Container>

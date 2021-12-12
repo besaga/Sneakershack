@@ -8,6 +8,7 @@ class CartService {
   }
   
   addProduct = (userId, productId) => this.app.post(`/${userId}/${productId}`)
+  removeProduct = (userId, productId) => this.app.put(`/${userId}/${productId}`)
   getCart = (userId) => this.app.get(`/details/${userId}`)
 }
 

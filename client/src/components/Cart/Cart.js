@@ -1,57 +1,39 @@
 import React from 'react'
 import CartService from "../../services/cart.service";
 import { Table } from "react-bootstrap";
-import AuthService from '../../services/auth.service';
+
 
 class Cart extends React.Component {
     constructor(props) {
         super(props)
-        this.state = {
-            cart: [],
-            productsQuantity: ''
-        }
+        this.state = {}
         this.cartService = new CartService()
-        this.authService = new AuthService()
     }
 
-    componentDidMount() {
-        this.authService.isloggedin()
-        .then(response => {
-            this.props.storeUser(response.data)
-            return this.cartService
-            .getCart(response.data._id)
-        })
-        .then(response => {
-            this.setState({cart: response.data})
-            this.setState({productsQuantity: response.data[0].products.length})
-            this.props.storeProductsQuantity(this.state.productsQuantity)
-        })
-        .catch(err => this.props.storeUser(null))
-    }
-    
     render(){
         let totalBeforeTax = 0;
+        console.log("-----cart",this.props.cart)
         return(
             <>
-            {this.state.cart.length === 0 ?
-                <h1>No tienes elementos en tu carrito...</h1>
-                :
-                <Table>
+            {!this.props.cart || this.props.cart.products.length === 0
+                ? <h1>No tienes elementos en tu carrito...</h1>
+                : <Table>
                     <thead>
-                        <tr><th>Product</th><th>Colorway</th><th>Price</th></tr>
+                        <tr><th>Product</th><th>Colorway</th><th>Price</th><th></th></tr>
                     </thead>
                     <tbody>
-                        {this.state.cart[0].products.map((product, key) => {
+                        {this.props.cart.products.map((product, key) => {
                             totalBeforeTax+=product.retailPrice
                             return <tr key={key}>
                                 <td>{product.name}</td>
                                 <td>{product.colorway}</td>
                                 <td>${product.retailPrice}</td>
+                                <td><button onClick={() => this.props.removeCartItem(this.props.loggedUser._id, product._id)}>X</button></td>
                             </tr>
                         })}
-                        <tr><td></td><td></td><td>${totalBeforeTax} <strong>subtotal</strong></td></tr>
-                        <tr><td></td><td></td><td>${totalBeforeTax*0.21} <strong>taxes (21%)</strong></td></tr>
-                        <tr><td></td><td></td><td><strong>${totalBeforeTax+totalBeforeTax*0.21} TOTAL</strong></td></tr>
+                        <tr><td></td><td></td><td>${totalBeforeTax} <strong>subtotal</strong></td><td></td></tr>
+                        <tr><td></td><td></td><td>${totalBeforeTax*0.21} <strong>taxes (21%)</strong></td><td></td></tr>
+                        <tr><td></td><td></td><td><strong>${totalBeforeTax+totalBeforeTax*0.21} TOTAL</strong></td><td></td></tr>
                     </tbody>
                 </Table>
             }

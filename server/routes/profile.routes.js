@@ -40,7 +40,7 @@ router.post("/edit/:id", (req, res) => {
       //     .catch(err => res.status(500).json({code:500, message:"Error",err}))
       // }
     })
-    .then((response) => res.status(200).json(response))
+    .then((user) => res.status(200).json(user))
     .catch((err) =>
       res
         .status(404)
