@@ -1,5 +1,6 @@
 import React from 'react'
 import CartService from "../../services/cart.service";
+import InvoiceService from "../../services/invoice.service";
 import { Table } from "react-bootstrap";
 
 
@@ -8,10 +9,11 @@ class Cart extends React.Component {
         super(props)
         this.state = {}
         this.cartService = new CartService()
+        this.invoiceService = new InvoiceService()
     }
 
     handlePurchase = () => {
-        this.cartService.confirmPurchase(this.props.loggedUser._id)
+        this.invoiceService.confirmPurchase(this.props.loggedUser._id)
             .then(response => {
                 console.log("RESPONSE",response)
                 const invoice = response.data
@@ -47,8 +49,8 @@ class Cart extends React.Component {
                                 </tr>
                             })}
                             <tr><td></td><td></td><td>${totalBeforeTax} <strong>subtotal</strong></td><td></td></tr>
-                            <tr><td></td><td></td><td>${totalBeforeTax*0.21} <strong>taxes (21%)</strong></td><td></td></tr>
-                            <tr><td></td><td></td><td><strong>${totalBeforeTax+totalBeforeTax*0.21} TOTAL</strong></td><td></td></tr>
+                            <tr><td></td><td></td><td>${(totalBeforeTax*0.21).toFixed(2)} <strong>taxes (21%)</strong></td><td></td></tr>
+                            <tr><td></td><td></td><td><strong>${(totalBeforeTax+totalBeforeTax*0.21).toFixed(2)} TOTAL</strong></td><td></td></tr>
                         </tbody>
                     </Table>
                     <button onClick={this.handlePurchase}>Confirm and pay</button>

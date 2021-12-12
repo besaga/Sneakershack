@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Table } from "react-bootstrap";
 import { Link } from 'react-router-dom'
-import CartService from "../../services/cart.service";
+import InvoiceService from "../../services/invoice.service";
 
 class Confirmation extends Component {
   constructor(props) {
@@ -10,11 +10,11 @@ class Confirmation extends Component {
     this.state = {
         invoice: undefined
     }
-    this.cartService = new CartService()
+    this.invoiceService = new InvoiceService()
   }
 
   componentDidMount() {
-    this.cartService.getInvoice(this.props.match.params.invoiceId)
+    this.invoiceService.getInvoice(this.props.match.params.invoiceId)
       .then(response => {
         this.setState({invoice: response.data})
       })
