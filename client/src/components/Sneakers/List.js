@@ -21,7 +21,6 @@ class SneakerList extends Component {
   componentDidMount = () => {
       this.service.getAllSneakers()
       .then(response => {
-        console.log(response.data)
         this.setState({sneakers:response.data})
         this.setState({initialSneakers: response.data})
       })
@@ -29,7 +28,6 @@ class SneakerList extends Component {
 
   refreshSneakers = (text) => {
       const sneakersCopy = [...this.state.initialSneakers]
-      console.log(sneakersCopy)
       let filteredProducts = sneakersCopy.filter(sneaker => sneaker.name.toLowerCase().includes(text.toLowerCase()))
       this.setState({
         sneakers: filteredProducts

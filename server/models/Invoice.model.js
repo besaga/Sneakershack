@@ -1,24 +1,22 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const salesSchema = new Schema(
+const InvoiceSchema = new Schema(
     {
         userId:{
             type: Schema.Types.ObjectId,
             ref: 'User',
         },
-        cartId:[{
-            type: Schema.Types.ObjectId,
-            ref: 'Cart',
-        }],
-        date:{ type: Date, required: true },
-        totalPrice:{ type: Number }
+        products: { type: Array },
+        subtotal:{ type: Number },
+        taxes:{ type: Number },
+        total:{ type: Number }
     },
     {
         timestamps: true
     }
 );
 
-const Sales = mongoose.model('Sales', salesSchema );
+const Invoice = mongoose.model('Invoice', InvoiceSchema );
 
-module.exports = Sneaker;
+module.exports = Invoice;

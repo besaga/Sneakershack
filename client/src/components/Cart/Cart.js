@@ -10,6 +10,20 @@ class Cart extends React.Component {
         this.cartService = new CartService()
     }
 
+    handlePurchase = () => {
+        this.cartService.confirmPurchase(this.props.loggedUser._id)
+            .then(response => {
+                console.log("RESPONSE",response)
+                const invoice = response.data
+                this.cartService.emptyCart(this.props.loggedUser._id)
+                    .then(response => {
+                        window.location = `/confirmation/${invoice._id}`
+                    })
+                    .catch(err => console.log(err))
+            })
+            .catch(err => console.log(err))
+    }
+
     render(){
         let totalBeforeTax = 0;
         return(
@@ -37,6 +51,7 @@ class Cart extends React.Component {
                             <tr><td></td><td></td><td><strong>${totalBeforeTax+totalBeforeTax*0.21} TOTAL</strong></td><td></td></tr>
                         </tbody>
                     </Table>
+                    <button onClick={this.handlePurchase}>Confirm and pay</button>
                 </>
             }
             </>

@@ -1,5 +1,6 @@
 const router = require("express").Router()
 const Cart = require("../models/Cart.model")
+const Invoice = require("../models/Invoice.model")
 
 router.get("/details/:userId", (req, res)=>{
     const {userId} = req.params
@@ -11,6 +12,13 @@ router.get("/details/:userId", (req, res)=>{
     })
     .then(cart => res.status(200).json(cart))
     .catch(err => err)
+})
+
+router.get("/invoice/:invoiceId", (req, res)=>{
+    const {invoiceId} = req.params
+    Invoice.findOne({_id: invoiceId})
+        .then(invoice => res.status(200).json(invoice))
+        .catch(err => res.status(500).json(err))
 })
 
 router.delete("/:userId", (req, res)=>{
@@ -35,6 +43,44 @@ router.put("/:userId/:productId", (req, res) => {
                 })
                 .then(updatedCart => res.status(200).json(updatedCart))
                 .catch(err => console.log(err))
+        })
+        .catch(err => console.log(err))
+})
+
+router.post("/confirmation/:userId", (req, res) => {
+    const {userId} = req.params
+    Cart.findOne({userId: userId})
+        .populate({
+            path: 'products',
+            model: 'Sneaker'
+        })
+        .then(cart => {
+            const subtotal = cart.products.length > 1
+                ? cart.products.reduce((previous, current) => previous.retailPrice + current.retailPrice)
+                : cart.products[0].retailPrice;
+            const taxes = subtotal + (subtotal * 0.21)
+            const simplifiedProducts = cart.products.map((el) => {
+                return {  
+                    sku: el.sku,
+                    brand: el.brand,
+                    name: el.name,
+                    retailPrice: el.retailPrice
+                }
+            })
+
+            Invoice.create({
+                userId: userId,
+                products: simplifiedProducts,
+                subtotal: subtotal,
+                taxes: taxes,
+                total: subtotal + taxes
+            })
+                .then(invoice => {
+                    // enviar email aquí antes de mandar la respuesta
+                    res.status(200).json(invoice)
+                })
+                .catch(err => console.log(err))
+
         })
         .catch(err => console.log(err))
 })
@@ -68,5 +114,7 @@ router.post("/:userId/:productId", (req, res) => {
     })
     .catch(err => console.log(err))
 })
+
+
 
 module.exports = router

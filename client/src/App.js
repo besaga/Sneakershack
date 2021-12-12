@@ -3,13 +3,14 @@ import { Component } from 'react'
 import Navbar from './components/layout/Navigation/Navbar'
 import SignupPage from './components/Signup/Signup'
 import LoginPage from './components/Login/Login'
-import { Switch, Route, Redirect } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 import AuthService from './services/auth.service';
 import CartService from "./services/cart.service";
 import Home from './components/Home/Home'
 import SneakerList from './components/Sneakers/List';
 import SneakerDetails from './components/Sneakers/Details';
 import Cart from './components/Cart/Cart';
+import Confirmation from './components/Confirmation/Confirmation';
 import Profile from './components/Profile/Profile'
 
 class App extends Component {
@@ -90,6 +91,7 @@ class App extends Component {
           {this.state.loggedUser ?
               <>
                 <Route path='/cart' exact render={(props) => <Cart loggedUser={this.state.loggedUser} storeUser={this.storeUser} cart={this.state.cart} removeCartItem={this.removeCartItem} emptyCart={this.emptyCart} storeProductsQuantity={this.storeProductsQuantity}/>}/>
+                <Route path='/confirmation/:invoiceId' exact render={(props) => <Confirmation {...props} loggedUser={this.state.loggedUser} storeUser={this.storeUser} />}/>
                 <Route path='/profile' exact render={(props) => <Profile storeUser={this.storeUser} loggedUser={this.state.loggedUser}/>}/>
               </>
               :
