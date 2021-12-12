@@ -47,9 +47,17 @@ class App extends Component {
   removeCartItem = (userId, productId) => {
     this.cartService.removeProduct(userId, productId)
         .then(response => {
-          console.log("removing......",response.data)
             this.setState({cart: response.data})
             this.storeProductsQuantity(response.data.products.length)
+        })
+        .catch(err => console.log(err))
+  }
+
+  emptyCart = (userId) => {
+    this.cartService.emptyCart(userId)
+        .then(response => {
+            this.setState({cart: response.data})
+            this.storeProductsQuantity(0)
         })
         .catch(err => console.log(err))
   }
@@ -57,7 +65,6 @@ class App extends Component {
   addCartItem = (userId, productId) => {
     this.cartService.addProduct(userId, productId)
       .then(response => {
-        console.log("adding......",response.data)
         this.setState({cart: response.data})
         this.storeProductsQuantity(response.data.products.length)
       })
@@ -82,7 +89,7 @@ class App extends Component {
           <Route path='/sneakers/:id' exact render={(props) => <SneakerDetails {...props} loggedUser={this.state.loggedUser} addCartItem={this.addCartItem}  />}/>
           {this.state.loggedUser ?
               <>
-                <Route path='/cart' exact render={(props) => <Cart loggedUser={this.state.loggedUser} storeUser={this.storeUser} cart={this.state.cart} removeCartItem={this.removeCartItem} storeProductsQuantity={this.storeProductsQuantity}/>}/>
+                <Route path='/cart' exact render={(props) => <Cart loggedUser={this.state.loggedUser} storeUser={this.storeUser} cart={this.state.cart} removeCartItem={this.removeCartItem} emptyCart={this.emptyCart} storeProductsQuantity={this.storeProductsQuantity}/>}/>
                 <Route path='/profile' exact render={(props) => <Profile storeUser={this.storeUser} loggedUser={this.state.loggedUser}/>}/>
               </>
               :

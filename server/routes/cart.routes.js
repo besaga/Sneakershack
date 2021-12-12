@@ -13,6 +13,17 @@ router.get("/details/:userId", (req, res)=>{
     .catch(err => err)
 })
 
+router.delete("/:userId", (req, res)=>{
+    const {userId} = req.params
+    Cart.findOne({userId: userId})
+        .then(cart => {
+            Cart.findByIdAndUpdate(cart.id, { products: [] }, {new : true})
+                .then(updatedCart => res.status(200).json(updatedCart))
+                .catch(err => console.log(err))
+        })
+        .catch(err => console.log(err))
+})
+
 router.put("/:userId/:productId", (req, res) => {
     const {userId, productId} = req.params
     Cart.findOne({userId: userId})
