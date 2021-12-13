@@ -2,25 +2,34 @@ const router = require("express").Router()
 const Valuation = require("../models/Valuation.model")
 
 
-router.get("/productValuations/:productId", (req, res) => {
+router.get("/all/:productId", (req, res) => {
 
     const {productId} = req.params;
 
-    Valuation.find({product: productId})
-    .populate("userId")
-    .then((resp) => res.json(resp))
-    .catch(err => res.json({err, errMessage: "value not found"}))
-
+    Valuation.find({productId: productId})
+        .populate({
+            path: 'userId',
+            model: 'User'
+        })
+        .then((valuations) => res.status(200).json(valuations))
+        .catch(err => res.status(500).json({err, errMessage: "value not found"}))
 });
 
-router.post("/create-valuation", (req, res) => {
-    const { comment, rating, product } = req.body
+router.post("/", (req, res) => {
+    const { comment, rating, productId } = req.body
     const userId = req.session.currentUser._id
 
-    Valuation.create({ userId, comment, rating: Number(rating), product })
-    .then((response) => {
-      res.json(response);
-    });
+    Valuation.create({ userId, comment, rating: Number(rating), productId })
+        .then((valuation) => {
+            valuation.populate({
+                path: 'userId',
+                model: 'User'
+            })
+            .then(populatedValuation => {
+                res.status(200).json(populatedValuation)
+            })            
+        })
+        .catch(err => res.status(500).json(err))
 });
 
 router.get("/:id", (req, res) =>{

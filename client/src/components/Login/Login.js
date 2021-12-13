@@ -19,7 +19,7 @@ class LoginPage extends Component {
         this.props.storeUser(response.data)
         window.location = "/"
       })
-      .catch(err => console.log(err.response.data.message))
+      .catch(err => console.log(err))
   }
 
   handleInputChange = (e) => {

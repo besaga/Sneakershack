@@ -7,14 +7,14 @@ const valuationSchema = new Schema(
             type: Schema.Types.ObjectId,
             ref: 'User',
         },
-        product:{
+        productId:{
             type: Schema.Types.ObjectId,
             ref: 'Sneaker'
         },
         comment: String,
         rating: {
             type:Number,
-            min:1,
+            min:0,
             max:5
         }
     },

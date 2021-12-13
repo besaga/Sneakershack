@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import SneakerService from "./../../services/sneaker.service";
 import { Link } from "react-router-dom";
 import CartService from "../../services/cart.service";
-import ValuationForm from "./ValuationForm";
 import "./Sneakers.css";
+import ValuationForm from "./ValuationForm";
 
 class SneakerDetails extends Component {
   constructor(props) {
@@ -41,6 +41,9 @@ class SneakerDetails extends Component {
           <Row>
             <Col md={6}>
               <img src={sneaker.image.thumbnail} alt={sneaker.name} />
+              <div>
+                <ValuationForm productId={this.state.sneaker._id} />
+              </div>
             </Col>
 
             <Col md={6}>
@@ -59,14 +62,14 @@ class SneakerDetails extends Component {
                     Volver a Zapatillas
                   </Link>
                   {this.props.loggedUser ? (
-                    <button
+                    <Button
                       onClick={() =>
                         this.handleClick(this.props.loggedUser._id, sneaker._id)
                       }
                       className="centrado"
                     >
                       Comprar
-                    </button>
+                    </Button>
                   ) : (
                     <Link to="/login">Login para comprar</Link>
                   )}
@@ -79,7 +82,6 @@ class SneakerDetails extends Component {
                   )}
                 </div>
               </article>
-              <ValuationForm product={this.state.sneaker._id} />
             </Col>
           </Row>
         )}

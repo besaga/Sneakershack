@@ -7,9 +7,9 @@ class ValuationService {
       withCredentials: true,
     });
   }
-  createReview = (state) =>
-    this.app.post("/create-valuation", state);
+  createReview = (state) => this.app.post("/", state);
   getValuation = (id) => this.app.get(`/${id}`);
+  getAllValuations = (id) => this.app.get(`/all/${id}`);
 }
 
 export default ValuationService;
