@@ -21,18 +21,25 @@ class SneakerList extends Component {
   componentDidMount = () => {
       this.service.getAllSneakers()
       .then(response => {
-        this.setState({sneakers:response.data})
+        this.setState({sneakers: response.data})
         this.setState({initialSneakers: response.data})
       })
   }
 
   refreshSneakers = (text) => {
-      const sneakersCopy = [...this.state.initialSneakers]
-      let filteredProducts = sneakersCopy.filter(sneaker => sneaker.name.toLowerCase().includes(text.toLowerCase()))
+    let preparedText = text.toLowerCase().trim()
+    if (!preparedText) {
+      this.setState({sneakers: this.state.initialSneakers})
+    } else {
+      let filteredProducts = this.state.initialSneakers.filter(
+        sneaker => {
+          let sneakerText = `${sneaker.brand} ${sneaker.name}`.toLowerCase()
+          return (sneakerText.includes(preparedText))
+        })
       this.setState({
         sneakers: filteredProducts
       })
-
+    }
   }
 
   render() {
