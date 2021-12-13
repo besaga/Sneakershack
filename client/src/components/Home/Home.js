@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 import { Carousel } from 'react-bootstrap'
 import './Home.css'
 import Image1 from './images/imagen-nike.jpeg'
-import Image2 from './images/vans.jpeg'
-import Image3 from './images/nike-air-force-manilla-street-shoot-shoes-wet-street-fashion-clothing-sneakers.jpeg'
+import Image2 from './images/vansta.webp'
+import Image3 from './images/vansskate.webp'
 
 const Home = (props) => {
   return (
@@ -29,7 +29,7 @@ const Home = (props) => {
         <img className="d-block w-100" src={Image3} alt="Third slide"/>
         <Carousel.Caption>
           <div className= "contenedor">
-              <Link className="button-name" to={'/sneakers'}>Comprar</Link>
+              <Link className="centrado" to={'/sneakers'}>Comprar</Link>
           </div>
         </Carousel.Caption>
       </Carousel.Item>

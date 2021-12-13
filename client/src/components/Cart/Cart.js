@@ -44,13 +44,13 @@ class Cart extends React.Component {
                                 return <tr key={key}>
                                     <td>{product.name}</td>
                                     <td>{product.colorway}</td>
-                                    <td>${product.retailPrice}</td>
+                                    <td>€{product.retailPrice}</td>
                                     <td><button onClick={() => this.props.removeCartItem(this.props.loggedUser._id, product._id)}>X</button></td>
                                 </tr>
                             })}
-                            <tr><td></td><td></td><td>${totalBeforeTax} <strong>subtotal</strong></td><td></td></tr>
-                            <tr><td></td><td></td><td>${(totalBeforeTax*0.21).toFixed(2)} <strong>taxes (21%)</strong></td><td></td></tr>
-                            <tr><td></td><td></td><td><strong>${(totalBeforeTax+totalBeforeTax*0.21).toFixed(2)} TOTAL</strong></td><td></td></tr>
+                            <tr><td></td><td></td><td>{totalBeforeTax}€<strong> subtotal</strong></td><td></td></tr>
+                            <tr><td></td><td></td><td>{(totalBeforeTax*0.21).toFixed(2)}€<strong> taxes (21%)</strong></td><td></td></tr>
+                            <tr><td></td><td></td><td>{(totalBeforeTax+totalBeforeTax*0.21).toFixed(2)}€<strong>TOTAL</strong></td><td></td></tr>
                         </tbody>
                     </Table>
                     <button onClick={this.handlePurchase}>Confirm and pay</button>

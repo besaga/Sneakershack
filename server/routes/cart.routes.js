@@ -1,7 +1,7 @@
 const router = require("express").Router()
 const Cart = require("../models/Cart.model")
 
-router.get("/details/:userId", (req, res)=>{
+router.get("/details/:userId",(req, res)=>{
     const {userId} = req.params
     Cart
     .findOne({userId: userId})

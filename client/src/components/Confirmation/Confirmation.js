@@ -24,7 +24,6 @@ class Confirmation extends Component {
   
   render() {
     const invoice = this.state.invoice;
-    // const date = new Date(invoice.createdAt);
 
     return (
       <Container>
@@ -46,12 +45,12 @@ class Confirmation extends Component {
                         return <tr key={key}>
                             <td>{product.name}</td>
                             <td>{product.colorway}</td>
-                            <td>${product.retailPrice}</td>
+                            <td>€{product.retailPrice}</td>
                         </tr>
                     })}
-                    <tr><td></td><td></td><td>${invoice.subtotal} <strong>subtotal</strong></td></tr>
-                    <tr><td></td><td></td><td>${invoice.taxes} <strong>taxes (21%)</strong></td></tr>
-                    <tr><td></td><td></td><td><strong>${invoice.total} TOTAL</strong></td></tr>
+                    <tr><td></td><td></td><td>{invoice.subtotal}€<strong> subtotal</strong></td></tr>
+                    <tr><td></td><td></td><td>{invoice.taxes}€<strong> taxes (21%)</strong></td></tr>
+                    <tr><td></td><td></td><td>{invoice.total}€<strong> TOTAL</strong></td></tr>
                 </tbody>
             </Table>
           </div>

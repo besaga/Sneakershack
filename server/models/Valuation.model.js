@@ -3,11 +3,11 @@ const Schema = mongoose.Schema;
 
 const valuationSchema = new Schema(
     {
-        userId:[{
+        userId:{
             type: Schema.Types.ObjectId,
             ref: 'User',
-        }],
-        products:{
+        },
+        product:{
             type: Schema.Types.ObjectId,
             ref: 'Sneaker'
         },

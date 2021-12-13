@@ -6,5 +6,7 @@ module.exports = app => {
   app.use("/api/profile", require("./profile.routes"));
   app.use("/api/sneakers", require("./sneakers.routes"));
   app.use("/api/invoice", require("./invoice.routes"));
+  app.use("/api/valuation", require("./valuation.routes"));
+
 
 }

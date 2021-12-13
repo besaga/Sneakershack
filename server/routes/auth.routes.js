@@ -2,6 +2,7 @@ const router = require("express").Router()
 const User = require("../models/User.model")
 const bcrypt = require("bcrypt")
 const bcryptSalt = 10
+const middleware = require("../middleware/index")
 
 router.post('/signup', (req, res) => {
     const { email, password } = req.body
@@ -41,7 +42,7 @@ router.post('/login', (req, res) => {
         .catch(err => res.status(500).json({ code: 500, message: 'DB error while fetching user', err }))
 })
 
-router.get('/logout', (req, res) => {
+router.get('/logout',(req, res) => {
     req.session.destroy((err) => res.status(200).json({ code: 200, message: 'Logout successful' }));
 })
 
