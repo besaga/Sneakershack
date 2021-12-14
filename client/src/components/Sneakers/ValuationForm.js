@@ -10,18 +10,9 @@ class ValuationForm extends Component {
       rating: 0,
       comment: "",
       productId: this.props.productId,
-      comments: []
     };
 
     this.valuationService = new ValuationService();
-  }
-
-  componentDidMount() {
-    this.valuationService.getAllValuations(this.props.productId)
-      .then(response => {
-        this.setState({comments: response.data})
-      })
-      .catch(err => console.log(err))
   }
 
   handleChange = (e) => {
@@ -32,8 +23,8 @@ class ValuationForm extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     this.valuationService.createReview(this.state)
-      .then(response => {
-        this.setState({comments: this.state.comments.push(response.data)})
+      .then(() => {
+        this.props.refreshValuations()
       })
       .catch(err => console.log(err))
   }
@@ -78,7 +69,7 @@ class ValuationForm extends Component {
         <hr />
 
         <Row>
-          { this.state.comments.map((valuation, key) => {
+          { this.props.comments.map((valuation, key) => {
               return (<div key={key}>
                   <p>User: <strong>{valuation.userId?.firstName}</strong> | Rating: <strong>{valuation.rating}</strong></p>
                   <p>Comment: {valuation.comment}</p>

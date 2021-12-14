@@ -1,0 +1,13 @@
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-arrow{
+    justify-content: space-between;
+    margin-left: 900px;
+}
+
+.logito{
+    height: 40px;
+}

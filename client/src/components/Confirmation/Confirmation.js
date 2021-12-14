@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Table } from "react-bootstrap";
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import InvoiceService from "../../services/invoice.service";
+import './Confirmation.css';
 
 class Confirmation extends Component {
   constructor(props) {
@@ -54,7 +55,7 @@ class Confirmation extends Component {
                 </tbody>
             </Table>
           </div>
-          <Link to="/sneakers">Return to sneakers list</Link>
+          <Link className="css-button-arrow--sand" to="/sneakers">Return to sneakers list</Link>
         </Row> }
       </Container>
     )

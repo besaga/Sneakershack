@@ -1,7 +1,11 @@
 import React from 'react'
+import './Navbar.css'
 import { Navbar, Nav, Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import AuthService from '../../../services/auth.service'
+import { AiFillShopping } from 'react-icons/ai';
+import Logo from './images/eleven-one-logo.png'
+
 
 const authService = new AuthService()
 
@@ -15,22 +19,19 @@ const Navigation = ({ loggedUser, storeUser, productsQuantity }) => {
   return (
    <Navbar bg="light" variant="light">
       <Container>
-        <div className="nav-position">
-          <Nav.Link  as={Link} to="/signup"></Nav.Link>
-        </div>
-          <Nav.Link as={Link} to="/">Inicio</Nav.Link>
-          <Nav className="me-auto nav-position">
-          <Nav.Link  as={Link} to="/sneakers">Zapatillas</Nav.Link>
+          <Nav.Link as={Link} to="/"><img className="logito" src={ Logo } /></Nav.Link>
+          <Nav className="me-auto nav-position navigation-arrow">
+          <Nav.Link  as={Link} to="/sneakers"> <AiFillShopping /></Nav.Link>
           {loggedUser ?
               <>
-                <Nav.Link  as={Link} to="/profile">editar usuario</Nav.Link>
-                <Nav.Link  as={Link} to="/cart">Tu Carrito {productsQuantity}</Nav.Link>
-                <Nav.Link as={"span"} onClick={logout}>Logout</Nav.Link>
+                <Nav.Link as={Link} to="/profile">User profile</Nav.Link>
+                <Nav.Link as={Link} to="/cart">Tu Carrito{productsQuantity}</Nav.Link>
+                <Nav.Link as={"span"} onClick={logout}>logout</Nav.Link>
               </>
             :
               <>
-                <Nav.Link  as={Link} to="/signup">Registro</Nav.Link>
-                <Nav.Link  as={Link} to="/login">Login</Nav.Link>
+                <Nav.Link as={Link} to="/signup">Registro</Nav.Link>
+                <Nav.Link as={Link} to="/login">Login</Nav.Link>
               </>
           }
           </Nav>

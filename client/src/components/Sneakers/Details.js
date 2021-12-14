@@ -3,6 +3,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import SneakerService from "./../../services/sneaker.service";
 import { Link } from "react-router-dom";
 import CartService from "../../services/cart.service";
+import ValuationService from "../../services/valuation.service";
 import "./Sneakers.css";
 import ValuationForm from "./ValuationForm";
 
@@ -13,9 +14,11 @@ class SneakerDetails extends Component {
     this.state = {
       sneaker: undefined,
       purchase: false,
+      comments: []
     };
     this.service = new SneakerService();
     this.cartService = new CartService();
+    this.valuationService = new ValuationService();
   }
 
   componentDidMount() {
@@ -23,8 +26,17 @@ class SneakerDetails extends Component {
       .getOneSneaker(this.props.match.params.id)
       .then((response) => {
         this.setState({ sneaker: response.data });
+        return this.valuationService.getAllValuations(this.state.sneaker._id)
       })
-      .catch((err) => console.log(err));
+      .then(response => {
+        this.setState({comments: response.data})
+      })
+      .catch(err => console.log(err))
+  }
+
+  refreshValuations = () => {
+    this.valuationService.getAllValuations(this.state.sneaker._id)
+    .then(response => this.setState({comments: response.data}))
   }
 
   handleClick = (userId, productId) => {
@@ -42,7 +54,7 @@ class SneakerDetails extends Component {
             <Col md={6}>
               <img src={sneaker.image.thumbnail} alt={sneaker.name} />
               <div>
-                <ValuationForm productId={this.state.sneaker._id} />
+                <ValuationForm comments={this.state.comments} productId={this.state.sneaker._id} refreshValuations={this.refreshValuations}/>
               </div>
             </Col>
 
