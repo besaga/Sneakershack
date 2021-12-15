@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import SneakerService from '../../services/sneaker.service'
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Card} from "react-bootstrap";
 import SearchBar from '../SearchBar/SearchBar';
 import './Sneakers.css'
 
@@ -44,21 +44,28 @@ class SneakerList extends Component {
 
   render() {
     return (
-        <Container>
+       <Container id="card-sneakers">
+        <Col md={12} >
           <Row>
           <SearchBar refreshSneakers={this.refreshSneakers} />
           {this.state.sneakers.map((elm, key) => {
             return (
-                <Col md={4} key={key}>
-                    <Link  className="button-name" as='a' to={`/sneakers/${elm._id}`}>
-                        <img src={elm.image.thumbnail} alt={elm.name} />
-                        <p>{elm.brand} | {elm.name}</p>
-                    </Link>
-                </Col>
-            )
-          })
-          }
-          </Row>
+              <Card style={{ width: '18rem' }} className="card-sneakers">
+                <Link className="button-name" as='a' to={`/sneakers/${elm._id}`}>
+                  <Card.Img variant="top" src={elm.image.thumbnail} alt={elm.name} />
+                </Link>
+                <Card.Body>
+                  <Card.Title>{elm.brand} | {elm.name}</Card.Title>
+                  <Card.Text>
+                    {elm.retailPrice}€
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+              )
+            })
+            }
+            </Row>
+          </Col>
         </Container>
     )
   }

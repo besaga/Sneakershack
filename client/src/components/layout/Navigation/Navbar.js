@@ -1,9 +1,8 @@
 import React from 'react'
 import './Navbar.css'
-import { Navbar, Nav, Container } from 'react-bootstrap'
+import { Navbar, Nav, Container, Col, Badge } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import AuthService from '../../../services/auth.service'
-import { AiFillShopping } from 'react-icons/ai';
 import Logo from './images/eleven-one-logo.png'
 
 
@@ -19,13 +18,16 @@ const Navigation = ({ loggedUser, storeUser, productsQuantity }) => {
   return (
    <Navbar bg="light" variant="light">
       <Container>
-          <Nav.Link as={Link} to="/"><img className="logito" src={ Logo } /></Nav.Link>
+        <Col>
+          <Nav.Link as={Link} to="/" ><img className="logito" src={ Logo } /></Nav.Link>
+        </Col>  
+        <Col>
           <Nav className="me-auto nav-position navigation-arrow">
-          <Nav.Link  as={Link} to="/sneakers"> <AiFillShopping /></Nav.Link>
+          <Nav.Link  as={Link} to="/sneakers">Shop</Nav.Link>
           {loggedUser ?
               <>
                 <Nav.Link as={Link} to="/profile">User profile</Nav.Link>
-                <Nav.Link as={Link} to="/cart">Tu Carrito{productsQuantity}</Nav.Link>
+                <Nav.Link as={Link} to="/cart">Tu Carrito <Badge pill bg="secondary">{productsQuantity}</Badge></Nav.Link>
                 <Nav.Link as={"span"} onClick={logout}>logout</Nav.Link>
               </>
             :
@@ -35,6 +37,7 @@ const Navigation = ({ loggedUser, storeUser, productsQuantity }) => {
               </>
           }
           </Nav>
+        </Col>  
       </Container>
     </Navbar>
   )

@@ -1,17 +1,17 @@
 import './App.css';
-import { Component } from 'react'
-import Navbar from './components/layout/Navigation/Navbar'
-import SignupPage from './components/Signup/Signup'
-import LoginPage from './components/Login/Login'
-import { Switch, Route } from 'react-router-dom'
+import { Component } from 'react';
+import Navbar from './components/layout/Navigation/Navbar';
+import SignupPage from './components/Signup/Signup';
+import LoginPage from './components/Login/Login';
+import { Switch, Route } from 'react-router-dom';
 import AuthService from './services/auth.service';
 import CartService from "./services/cart.service";
-import Home from './components/Home/Home'
+import Home from './components/Home/Home';
 import SneakerList from './components/Sneakers/List';
 import SneakerDetails from './components/Sneakers/Details';
 import Cart from './components/Cart/Cart';
 import Confirmation from './components/Confirmation/Confirmation';
-import Profile from './components/Profile/Profile'
+import Profile from './components/Profile/Profile';
 
 class App extends Component {
   constructor(props) {

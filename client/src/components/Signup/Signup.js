@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Container, Form, Button, Row, Col } from 'react-bootstrap'
 import AuthService from '../../services/auth.service'
+import './Signup.css'
 
 class SignupPage extends Component {
   constructor(props) {
@@ -28,11 +29,11 @@ class SignupPage extends Component {
 
   render() {
     return (
-      <Container>
-        <Row>
+      <Container className="signup">
+        <Row >
           <Col md={{ span: 4, offset: 4 }}>
-            <h2>Registro</h2>
-
+            <h2>Signup</h2>
+            <hr />
             <Form onSubmit={this.handleSubmit}>
               <Form.Group className="mb-3" controlId="email">
                 <Form.Label>Email</Form.Label>
@@ -44,7 +45,7 @@ class SignupPage extends Component {
                 <Form.Control onChange={this.handleInputChange} value={this.state.password} name="password" type="password" placeholder="Password" />
               </Form.Group>
 
-              <Button variant="primary" type="submit">
+              <Button variant="light" type="submit">
                 Submit
               </Button>
             </Form>

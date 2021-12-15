@@ -34,7 +34,6 @@ router.post("/:userId", (req, res) => {
                 total: (subtotal + taxes).toFixed(2)
             })
                 .then(invoice => {
-                    // enviar email aquí antes de mandar la respuesta
                     res.status(200).json(invoice)
                 })
                 .catch(err => console.log(err))

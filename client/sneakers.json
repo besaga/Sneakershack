@@ -718,6 +718,619 @@
             "small": "https://image.goat.com/750/attachments/product_template_pictures/images/062/717/431/original/831733_00.png.png",
             "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/062/717/431/original/831733_00.png.png"
         }
+    },
+    {
+        "sku":"GX3872",
+        "brand":"adidas",
+        "name":"adidas Forum High Kerwin Frost Humanarchives",
+        "colorway":"White/Blue/Grey",
+        "gender":"men",
+        "silhouette":"Forum",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-17",
+        "retailPrice":250,
+        "estimatedMarketValue":370,
+        "story":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/062/968/948/original/GX3872.png.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/062/968/948/original/GX3872.png.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/062/968/948/original/GX3872.png.png"
+        }
+    },
+    {
+        "sku":"DC9389-001",
+        "brand":"Nike",
+        "name":"Nike Air Max 90 Surplus Wolf Grey Pink Salt",
+        "colorway":"Wolf Grey/Pink Salt/Cool Grey",
+        "gender":"men",
+        "silhouette":"Air Max 90",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-15",
+        "retailPrice":140,
+        "estimatedMarketValue":165,
+        "story":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/062/137/718/original/834409_00.png.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/062/137/718/original/834409_00.png.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/062/137/718/original/834409_00.png.png"
+        } 
+    },
+    {
+        "sku":"GW6147",
+        "brand":"Reebok",
+        "name":"Pyer Moss x Experiment 4 Trail Fury 'Emergency'",
+        "colorway":"Pure Grey 2/Tin Grey/Footwear White",
+        "gender":"men",
+        "silhouette":"Experiment 4",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-14",
+        "retailPrice":250,
+        "estimatedMarketValue":310,
+        "story":"The Pyer Moss x Reebok Experiment 4 Trail Fury ‘Emergency’ pairs fashion-forward style with a rugged outdoor sensibility. Designer Kerby Jean-Raymond outfits the sneaker in breathable grey mesh with a contrasting orange TPU shroud. A drawcord lacing system and a pull tab at the heel assist with easy on and off. Additional details include a soft velour lining, synthetic leather overlays and a molded heel clip. A decoupled EVA midsole borrowed from the original Instapump Fury provides lightweight cushioning, while a lugged rubber outsole delivers grippy traction on rough terrain.",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/062/550/638/original/GW6147.png.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/062/550/638/original/GW6147.png.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/062/550/638/original/GW6147.png.png"
+        }
+    },
+    {
+        "sku":"CT8013-170",
+        "brand":"Jordan",
+        "name":"Jordan 12 Retro Royalty Taxi",
+        "colorway":"White/Black-Metallic Gold",
+        "gender":"men",
+        "silhouette":"Air Jordan 12",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-13",
+        "retailPrice":190,
+        "estimatedMarketValue":221,
+        "story":"The Air Jordan 12 Retro ‘Royalty’ adds gilded accents to a two-tone design reminiscent of the OG ‘Taxi’ colorway from 1996. The mid-top makes use of a white tumbled leather upper with radiating stitch detailing and black lizard-textured overlays. Contrasting pops of metallic gold land on the molded top eyelets, midfoot TPU piece and the Jumpman and ‘Two 3’ branding embroidered atop the tongue. Responsive cushioning comes courtesy of a full-length Zoom Air unit. Underfoot, the outsole features rubber herringbone traction pods and a carbon fiber spring plate.",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/062/390/971/original/784385_00.png.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/062/390/971/original/784385_00.png.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/062/390/971/original/784385_00.png.png"
+        } 
+    },
+    {
+        "sku":"DH0559-001",
+        "brand":"Nike",
+        "name":"Nike Air Max 97 Wax Safari",
+        "colorway":"Black/White/Red",
+        "gender":"men",
+        "silhouette":"Nike Air Max 97",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-13",
+        "retailPrice":170,
+        "estimatedMarketValue":170,
+        "story":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "image":{
+        "original":"https://images.stockx.com/images/Nike-Air-Max-97-Wax-Safari.jpg?fit=fill&bg=FFFFFF&w=500&h=500&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1635880041",
+        "small":"https://images.stockx.com/images/Nike-Air-Max-97-Wax-Safari.jpg?fit=fill&bg=FFFFFF&w=375&h=375&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1635880041",
+        "thumbnail":"https://images.stockx.com/images/Nike-Air-Max-97-Wax-Safari.jpg?fit=fill&bg=FFFFFF&w=200&h=200&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1635880041"
+        }
+    },
+    {
+        "sku":"DM7582-100",
+        "brand":"Nike",
+        "name":"Nike Blazer Low '77 Premium Coconut Milk",
+        "colorway":"Coconut Milk/Multi/Sail",
+        "gender":"men",
+        "silhouette":"Blazer",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-13",
+        "retailPrice":100,
+        "estimatedMarketValue":100,
+        "story":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/062/718/277/original/814918_00.png.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/062/718/277/original/814918_00.png.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/062/718/277/original/814918_00.png.png"
+        }
+    },
+    {
+        "sku":"YZY-KNIT-RUNNER-BOOT",
+        "brand":"adidas",
+        "name":"Yeezy Knit Runner Boot 'Sulfur'",
+        "colorway":"Sulfur/Sulfur/Sulfur",
+        "gender":"men",
+        "silhouette":"Yeezy Knit Runner",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-13",
+        "retailPrice":350,
+        "estimatedMarketValue":851,
+        "story":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/062/677/266/original/YZY_KNIT_RUNNER_BOOT.png.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/062/677/266/original/YZY_KNIT_RUNNER_BOOT.png.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/062/677/266/original/YZY_KNIT_RUNNER_BOOT.png.png"
+        }
+    },
+    {
+        "sku":"DD1503-111",
+        "brand":"Nike",
+        "name":"Wmns Dunk Low 'Archeo Pink'",
+        "colorway":"White/Archeo Pink",
+        "gender":"women",
+        "silhouette":"Dunk",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-12",
+        "retailPrice":110,
+        "estimatedMarketValue":140,
+        "story":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/062/092/312/original/812196_00.png.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/062/092/312/original/812196_00.png.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/062/092/312/original/812196_00.png.png"
+        }
+    },
+    {
+        "sku":"DO2372-737",
+        "brand":"Nike",
+        "name":"Nike Waffle Trainer 2 Warm Core (W)",
+        "colorway":"Twine/Sail/Game Royal/Fallen",
+        "gender":"women",
+        "silhouette":"Air Waffle Trainer",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-12",
+        "retailPrice":100,
+        "estimatedMarketValue":216,
+        "story":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/062/677/175/original/DO2372_737.png.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/062/677/175/original/DO2372_737.png.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/062/677/175/original/DO2372_737.png.png"
+        }
+    },
+    {
+        "sku":"M992CCS-FRUIT",
+        "brand":"New Balance",
+        "name":"Concepts x 992 Made In USA 'Low Hanging Fruit'",
+        "colorway":"Lime/Brown",
+        "gender":"men",
+        "silhouette":"992",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-12",
+        "retailPrice":240,
+        "estimatedMarketValue":550,
+        "story":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).vv",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/062/913/024/original/M992CCS_FRUIT.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/062/913/024/original/M992CCS_FRUIT.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/062/913/024/original/M992CCS_FRUIT.png"
+        }
+    },
+    {
+        "sku":"DJ0813-600",
+        "brand":"Nike",
+        "name":"NFL x Air Zoom Pegasus 38 'Tampa Bay Buccaneers'",
+        "colorway":"Gym Red/Deep Pewter/Black/White",
+        "gender":"men",
+        "silhouette":"Air Zoom Pegasus 38",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-12",
+        "retailPrice":130,
+        "estimatedMarketValue":200,
+        "story":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/062/778/475/original/DJ0813_600.png.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/062/778/475/original/DJ0813_600.png.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/062/778/475/original/DJ0813_600.png.png"
+        }
+    },
+    {
+        "sku":"DJ4375-004",
+        "brand":"Jordan",
+        "name":"Jordan 2 Retro Low SP Off-White Black Blue",
+        "colorway":"Black/Blue-Grey",
+        "gender":"men",
+        "silhouette":"Air Jordan 2",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-12",
+        "retailPrice":250,
+        "estimatedMarketValue":444,
+        "story":"With the release of the Off-White x Air Jordan 2 Retro Low SP ‘Black Varsity Royal’, a relatively unheralded silhouette gets the Virgil Abloh treatment. The low-top carries a black leather upper with a tonal lizard-textured overlay and contrasting royal blue accents. They land on the molded heel panel, midfoot piping and exposed-foam tongue, featuring the Jordan Wings logo for an OG touch. Michael Jordan’s signature is scrawled across the lateral side, while Abloh leaves his mark with a plastic zip tie, medial-side Helvetica text and ‘SHOELACES’ printed on the laces. Faux cracking on the midsole gives the shoe an aged, distressed aesthetic.",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/061/538/654/original/DJ4375_004.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/061/538/654/original/DJ4375_004.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/061/538/654/original/DJ4375_004.png"
+        }
+    },
+    {
+        "sku":"GW8810",
+        "brand":"adidas",
+        "name":"adidas Superturf Adventure Sean Wotherspoon Grey",
+        "colorway":"Grey/Khaki/Orange",
+        "gender":"men",
+        "silhouette":"Superturf Adventure",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-12",
+        "retailPrice":160,
+        "estimatedMarketValue":167,
+        "story":"The Sean Wotherspoon x adidas Superturf Adventure ‘Grey Orange’ debuts a new silhouette built with vegan materials. The Round Two co-founder dresses the trail runner in grey corduroy with neutral-hued synthetic overlays, speckled mudguards, and black webbing three-stripes marked with orange zigzag stitching. Additional orange accents land on the mesh collar lining and tongue, featuring a zippered shroud that conceals an embroidered Jiminy Cricket graphic. A removable corduroy pouch is branded with Sean Wotherspoon’s personal logo. The sneaker rides on a responsive adiPRENE+ midsole, reinforced by a Traxion rubber outsole equipped with outdoor lugs.",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/061/804/099/original/GW8810.png.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/061/804/099/original/GW8810.png.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/061/804/099/original/GW8810.png.png"
+        }
+    },
+    {
+        "sku":"DJ4375-106",
+        "brand":"Jordan",
+        "name":"Jordan 2 Retro Low SP Off-White White Red",
+        "colorway":"White/Sail-Red-Grey",
+        "gender":"men",
+        "silhouette":"Air Jordan 2",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-12",
+        "retailPrice":250,
+        "estimatedMarketValue":526,
+        "story":"The Off-White x Air Jordan 2 Retro Low SP ‘White Varsity Red’ delivers Virgil Abloh’s take on the retro silhouette originally released in 1986. This pair replicates the look of the OG ‘White/Red’ colorway, featuring a white leather upper with red piping and a matching red heel overlay. Abloh’s signature touches are present and accounted for, including a plastic zip tie, Helvetica text on the medial side panel, and exposed foam on the collar and tongue. On the lateral side, Michael Jordan’s signature is scrawled across a textured lizard-inspired overlay. The low-top is mounted on a pre-yellowed midsole with cracked sidewalls that simulate the sort of crumbling that commonly besets vintage sneakers.",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/062/398/092/original/DJ4375_106.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/062/398/092/original/DJ4375_106.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/062/398/092/original/DJ4375_106.png"
+        }
+    },
+    {
+        "sku":"M990VS4",
+        "brand":"New Balance",
+        "name":"New Balance 990v4 Version 4 Grey",
+        "colorway":"Grey/Red",
+        "gender":"unisex",
+        "silhouette":"990",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-12",
+        "retailPrice":185,
+        "estimatedMarketValue":231,
+        "story":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/062/904/206/original/M990VS4.png.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/062/904/206/original/M990VS4.png.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/062/904/206/original/M990VS4.png.png"
+        }
+    },
+    {
+        "sku":"M991BNG",
+        "brand":"New Balance",
+        "name":"New Balance 991 Brown Navy Grey",
+        "colorway":"Brown/Grey/Navy",
+        "gender":"men",
+        "silhouette":"991",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-12",
+        "retailPrice":240,
+        "estimatedMarketValue":240,
+        "story":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/061/702/530/original/M991BNG.png.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/061/702/530/original/M991BNG.png.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/061/702/530/original/M991BNG.png.png"
+        }
+    },
+    {
+        "id":"80895875-4b4f-4e43-bb81-8b26a39cf6d8",
+        "sku":"CZ1757-001",
+        "brand":"Nike",
+        "name":"Nike Free Terra Vista Black Canvas",
+        "colorway":"Black/Canvas-Anthracite-Orange",
+        "gender":"men",
+        "silhouette":"Free Terra Vista",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-11",
+        "retailPrice":120,
+        "estimatedMarketValue":151,
+        "story":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).v",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/062/550/581/original/CZ1757_001.png.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/062/550/581/original/CZ1757_001.png.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/062/550/581/original/CZ1757_001.png.png"
+        }
+    },
+    {
+        "sku":"DO2194-001",
+        "brand":"Nike",
+        "name":"Wmns Air Max 90 'Lucky Charms'",
+        "colorway":"Ash Green/Ash Green/Metallic Silver",
+        "gender":"women",
+        "silhouette":"Air Max 90",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-11",
+        "retailPrice":140,
+        "estimatedMarketValue":160,
+        "story":"The Nike women’s Air Max 90 ‘Lucky Charms’ treats the retro runner to a luxurious makeover, highlighted by a plush velvet upper in a monochrome aqua blue finish. Traditional TPU eyelets remain, along with a molded heel patch marked with embossed Nike Air branding. Draped over the collar, a removable chain with branded pendants shines in a metallic silver finish. The sneaker rides on a solid white foam midsole, fitted with a visible Air-sole unit in the heel and supported by a waffle-traction rubber outsole underfoot.",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/062/318/438/original/DO2194_001.png.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/062/318/438/original/DO2194_001.png.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/062/318/438/original/DO2194_001.png.png"
+        }
+    },
+    {
+        "sku":"DJ9776-001",
+        "brand":"Nike",
+        "name":"Wmns Waffle One 'Black Leopard'",
+        "colorway":"Black/Black/Multi-Color",
+        "gender":"women",
+        "silhouette":"Waffle One",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-11",
+        "retailPrice":100,
+        "estimatedMarketValue":100,
+        "story":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/062/677/168/original/DJ9776_001.png.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/062/677/168/original/DJ9776_001.png.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/062/677/168/original/DJ9776_001.png.png"
+        }
+    },
+    {
+        "sku":"DM0803-300",
+        "brand":"Jordan",
+        "name":"Jordan 13 Retro Low Singles' Day (2021)",
+        "colorway":"Barley Green/Black",
+        "gender":"men",
+        "silhouette":"Air Jordan 13",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-11",
+        "retailPrice":200,
+        "estimatedMarketValue":219,
+        "story":"The Air Jordan 13 Retro Low ‘Singles Day’ celebrates the commercial holiday with a unique build: the upper features a black tumbled leather vamp, black synthetic suede paneling, and pale green leather overlays enlivened with geometric stitch detailing. The latter component features a glow-in-the-dark finish on the medial side, while the luminescent properties on the opposite side are limited to vertically printed that reads ‘Air Jordan 0023’ and ‘1111 Low.’ Matching green accents make their way to the embroidered Jumpman atop the tongue and the 13’s signature panther paw outsole, similarly updated with a glow-in-the-dark treatment.",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/062/717/933/original/822639_00.png.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/062/717/933/original/822639_00.png.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/062/717/933/original/822639_00.png.png"
+        }
+    },
+    {
+        "sku":"CZ1757-300",
+        "brand":"Nike",
+        "name":"Nike Free Terra Vista Brown Kelp Pink Glaze",
+        "colorway":"Brown Kelp/Pink Glaze-Sequoia-Black",
+        "gender":"men",
+        "silhouette":"Free Terra Vista",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-11",
+        "retailPrice":120,
+        "estimatedMarketValue":198,
+        "story":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/062/550/583/original/CZ1757_300.png.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/062/550/583/original/CZ1757_300.png.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/062/550/583/original/CZ1757_300.png.png"
+        }
+    },
+    {
+        "sku":"DC8240-800",
+        "brand":"Nike",
+        "name":"Nike Overbreak SP Hot Curry",
+        "colorway":"Hot Curry/Black-White",
+        "gender":"men",
+        "silhouette":"Overbreak",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-10",
+        "retailPrice":140,
+        "estimatedMarketValue":324,
+        "story":"The Nike Overbreak SP &#39;Hot Curry&#39; merges retro-inspired looks with ultra-modern cushioning. The upper combines a textile base in Pollen with curry-colored synthetic overlays and an oversized Swoosh in black tumbled leather. A Nike wordmark in black lettering is stamped on the leather heel tab, while a woven Nike Overbreak tag adorns the tongue. The lightweight build rests on a sculpted React foam midsole, borrowed from the Nike OverReact and dipped in off-white Sail.",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/062/437/221/original/DC8240_800.png.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/062/437/221/original/DC8240_800.png.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/062/437/221/original/DC8240_800.png.png"
+        }
+    },
+    {
+        "sku":"DC8744-300",
+        "brand":"Nike",
+        "name":"Air Force 1 '07 LX 'Toasty'",
+        "colorway":"Oil Green/Medium Olive/Brown Kelp/Sequoia",
+        "gender":"men",
+        "silhouette":"Air Force 1",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-10",
+        "retailPrice":120,
+        "estimatedMarketValue":187,
+        "story":"The Nike Air Force 1 ‘07 LX ‘Toasty’ remakes the sneaker icon with a winterized build that incorporates at least 20% recycled materials by weight. In lieu of traditional leather, the color-blocked upper is constructed from quilted textile in Brown Kelp, Oil Green, Sequoia and soft pink hues. Cozy white fleece lines the interior for added warmth. The low-top is mounted on a solid white rubber cupsole, featuring an Air-sole heel unit encapsulated in a lightweight foam wedge.",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/062/437/222/original/DC8744_300.png.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/062/437/222/original/DC8744_300.png.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/062/437/222/original/DC8744_300.png.png"
+        }
+    },
+    {
+        "sku":"DH7717-100",
+        "brand":"Nike",
+        "name":"Nike SB Dunk High RX-0 Unicorn Gundam",
+        "colorway":"White/Amarillo",
+        "gender":"men",
+        "silhouette":"Dunk SB",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-10",
+        "retailPrice":110,
+        "estimatedMarketValue":195,
+        "story":"The Gundam x Nike Dunk High SB ‘RX-0 Project Unicorn’ is taken from a collaborative series celebrating the Tokyo 2021 Summer Olympics. Nodding to the enduring mecha-based sci-fi franchise and accompanying toys, this pair showcases a unique design inspired by the RX-0 Unicorn Gundam. The high-top carries a white leather upper with tonal overlays outlined in contrasting red trim and stitching. Sculpted lines on the collar and toe box replicate the look of the Gundam armor, while interchangeable Swooshes reflect customizable toy models or a sticker-riddled skate deck. Additional branding elements include a woven yellow Nike SB tag and a red unicorn emblem stamped on the lateral heel.",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/062/098/219/original/782548_00.png.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/062/098/219/original/782548_00.png.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/062/098/219/original/782548_00.png.png"
+        }
+    },
+    {
+        "sku":"DC8240-400",
+        "brand":"Nike",
+        "name":"Nike Overbreak SP Armory Navy",
+        "colorway":"Armory Navy/Red-White",
+        "gender":"men",
+        "silhouette":"Overbreak",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-10",
+        "retailPrice":140,
+        "estimatedMarketValue":324,
+        "story":"The Nike Overbreak SP ‘Armory Navy’ delivers a retro-inspired silhouette that blends heritage running style with experimental avant-garde tooling. The paneled textile upper is rendered in contrasting navy and brown hues with an oversized tumbled leather swoosh in scarlet. Additional branding elements include a Nike wordmark on the back tab and a woven Nike Overbreak tag atop the tongue. The sneaker is mounted on a distinctive OverReact midsole in an off-white finish.",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/062/437/220/original/DC8240_400.png.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/062/437/220/original/DC8240_400.png.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/062/437/220/original/DC8240_400.png.png"
+        }
+    },
+    {
+        "sku":"M993ALD-TAUPE",
+        "brand":"New Balance",
+        "name":"Aimé Leon Dore x 993 Made in USA 'Taupe'",
+        "colorway":"Taupe",
+        "gender":"men",
+        "silhouette":"993",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-09",
+        "retailPrice":200,
+        "estimatedMarketValue":438,
+        "story":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/062/911/496/original/M993ALD_TAUPE.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/062/911/496/original/M993ALD_TAUPE.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/062/911/496/original/M993ALD_TAUPE.png"
+        }
+    },
+    {
+        "sku":"M993ALD-BRN",
+        "brand":"New Balance",
+        "name":"Aimé Leon Dore x 993 Made in USA 'Brown'",
+        "colorway":"Brown",
+        "gender":"men",
+        "silhouette":"993",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-09",
+        "retailPrice":200,
+        "estimatedMarketValue":479,
+        "story":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/062/911/404/original/M993ALD_BRN.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/062/911/404/original/M993ALD_BRN.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/062/911/404/original/M993ALD_BRN.png"
+        }
+    },
+    {
+        "sku":"DJ0851-400",
+        "brand":"Nike",
+        "name":"NFL x Air Zoom Pegasus 38 'Los Angeles Rams'",
+        "colorway":"Blue Void/Midwest Gold/Hyper Royal/White",
+        "gender":"men",
+        "silhouette":"Air Zoom Pegasus 38",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-06",
+        "retailPrice":130,
+        "estimatedMarketValue":130,
+        "story":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/062/904/125/original/DJ0851_400.png.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/062/904/125/original/DJ0851_400.png.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/062/904/125/original/DJ0851_400.png.png"
+        }
+    },
+    {
+        "sku":"DJ0825-001",
+        "brand":"Nike",
+        "name":"NFL x Air Zoom Pegasus 38 'Atlanta Falcons'",
+        "colorway":"Black/Gym Red/Medium Silver/White",
+        "gender":"men",
+        "silhouette":"Air Zoom Pegasus 38",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-06",
+        "retailPrice":130,
+        "estimatedMarketValue":130,
+        "story":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/062/904/110/original/DJ0825_001.png.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/062/904/110/original/DJ0825_001.png.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/062/904/110/original/DJ0825_001.png.png"
+        }
+    },
+    {
+        "sku":"DJ0815-100",
+        "brand":"Nike",
+        "name":"NFL x Air Zoom Pegasus 38 'Cleveland Browns'",
+        "colorway":"Natural/Team Orange/White/Seal Brown",
+        "gender":"men",
+        "silhouette":"Air Zoom Pegasus 38",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-06",
+        "retailPrice":130,
+        "estimatedMarketValue":130,
+        "story":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/062/904/101/original/DJ0815_100.png.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/062/904/101/original/DJ0815_100.png.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/062/904/101/original/DJ0815_100.png.png"
+        }
+    },
+    {
+        "sku":"DJ0823-001",
+        "brand":"Nike",
+        "name":"NFL x Air Zoom Pegasus 38 'Miami Dolphins'",
+        "colorway":"Wolf Grey/Turbo Green/Brilliant Orange/White",
+        "gender":"men",
+        "silhouette":"Air Zoom Pegasus 38",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-06",
+        "retailPrice":130,
+        "estimatedMarketValue":130,
+        "story":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/062/904/107/original/DJ0823_001.png.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/062/904/107/original/DJ0823_001.png.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/062/904/107/original/DJ0823_001.png.png"
+        }
+    },
+    {
+        "sku":"DJ0846-400",
+        "brand":"Nike",
+        "name":"NFL x Air Zoom Pegasus 38 'New England Patriots'",
+        "colorway":"College Navy/University Red/Wolf Grey/White",
+        "gender":"men",
+        "silhouette":"Air Zoom Pegasus 38",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-06",
+        "retailPrice":130,
+        "estimatedMarketValue":130,
+        "story":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/062/904/121/original/DJ0846_400.png.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/062/904/121/original/DJ0846_400.png.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/062/904/121/original/DJ0846_400.png.png"
+        }
+    },
+    {
+        "sku":"DJ0849-001",
+        "brand":"Nike",
+        "name":"NFL x Air Zoom Pegasus 38 'Baltimore Ravens'",
+        "colorway":"Black/New Orchid/Ochre/White",
+        "gender":"men",
+        "silhouette":"Air Zoom Pegasus 38",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-06",
+        "retailPrice":130,
+        "estimatedMarketValue":130,
+        "story":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/062/904/124/original/DJ0849_001.png.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/062/904/124/original/DJ0849_001.png.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/062/904/124/original/DJ0849_001.png.png"
+        }
+    },
+    {
+        "sku":"DJ0812-400",
+        "brand":"Nike",
+        "name":"NFL x Air Zoom Pegasus 38 'Denver Broncos'",
+        "colorway":"College Navy/Brilliant Orange/White",
+        "gender":"men",
+        "silhouette":"Air Zoom Pegasus 38",
+        "releaseYear":2021,
+        "releaseDate":"2021-11-06",
+        "retailPrice":130,
+        "estimatedMarketValue":130,
+        "story":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+        "image":{
+        "original":"https://image.goat.com/attachments/product_template_pictures/images/062/904/099/original/DJ0812_400.png.png",
+        "small":"https://image.goat.com/750/attachments/product_template_pictures/images/062/904/099/original/DJ0812_400.png.png",
+        "thumbnail":"https://image.goat.com/375/attachments/product_template_pictures/images/062/904/099/original/DJ0812_400.png.png"
+        }
     }
-
+        
 ]

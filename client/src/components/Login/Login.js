@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
-import { Container, Form, Button, Row, Col } from 'react-bootstrap'
-import AuthService from '../../services/auth.service'
+import React, { Component } from 'react';
+import { Container, Form, Button, Row, Col } from 'react-bootstrap';
+import AuthService from '../../services/auth.service';
+import "./Login.css";
 
 class LoginPage extends Component {
   constructor(props) {
@@ -29,8 +30,7 @@ class LoginPage extends Component {
 
   render() {
     return (
-      (
-        <Container>
+        <Container className="login">
           <Row>
             <Col md={{ span: 4, offset: 4 }}>
               <h2>Login</h2>
@@ -46,13 +46,13 @@ class LoginPage extends Component {
                   <Form.Control onChange={this.handleInputChange} value={this.state.password} name="password" type="password" placeholder="Password" />
                 </Form.Group>
 
-                <Button variant="primary" type="submit">
+                <Button variant="light" type="submit">
                   Submit
                 </Button>
               </Form>
             </Col>
           </Row>
-        </Container>)
+        </Container>
     )
   }
 }

@@ -70,26 +70,21 @@ class SneakerDetails extends Component {
                 <p>Precio de mercado: {sneaker.estimatedMarketValue}€</p>
                 <p>{sneaker.story}</p>
                 <div className="comprar">
-                  <Link className="button-name" to={"/sneakers"}>
+                  <Link className="buttongrey" to={"/sneakers"}>
                     Volver a Zapatillas
                   </Link>
                   {this.props.loggedUser ? (
-                    <Button
-                      onClick={() =>
-                        this.handleClick(this.props.loggedUser._id, sneaker._id)
-                      }
-                      className="centrado"
-                    >
-                      Comprar
+                    <Button onClick={() => this.handleClick(this.props.loggedUser._id, sneaker._id)}
+                      className="centrado">Comprar
                     </Button>
                   ) : (
-                    <Link to="/login">Login para comprar</Link>
+                    <Link className="buttongrey" to="/login">Login para comprar</Link>
                   )}
                   {this.state.purchase && (
                     <div>
-                      Enhorabuena, tu producto se ha añaddo al carrito.
-                      <Link to="/cart">Ir al carrito</Link>
-                      <Link to="/sneakers">Seguir comprando</Link>
+                      <h2>Enhorabuena, tu producto se ha añadido al carrito.</h2>
+                      <Link className="buttongrey" to="/cart">Ir al carrito</Link>
+                      <Link className="buttongrey" to="/sneakers">Seguir comprando</Link>
                     </div>
                   )}
                 </div>

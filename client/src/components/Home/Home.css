@@ -24,46 +24,23 @@
 }
 
 .button-name{
-    text-decoration: none;
+    background-color: #e7e7e7; 
     color: black;
-}
-.css-button-arrow--sand {
-    min-width: 130px;
-    height: 40px;
-    color: #fff;
-    padding: 5px 10px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    outline: none;
-    overflow: hidden;
-    border-radius: 5px;
     border: none;
-    background-color: rgba(0, 0, 0, 0.3)
-  }
-  .css-button-arrow--sand:hover {
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
     border-radius: 5px;
-    padding-right: 24px;
-    padding-left:8px;
-  }
-  .css-button-arrow--sand:hover:after {
-    opacity: 1;
-    right: 10px;
-  }
-  .css-button-arrow--sand:after {
-    content: "\00BB";
-    position: absolute;
-    opacity: 0;
-    font-size: 20px;
-    line-height: 40px;
-    top: 0;
-    right: -20px;
-    transition: 0.4s;  
-  }
+}
 
 .tiovivo img {
     object-fit: cover;
     height: 700px;
 }
+
+/* FOOTER */
+.blockquote-footer{
+    text-align: center;
+  }

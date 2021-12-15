@@ -1,9 +1,24 @@
-a{
-    color: yellow;
+.buttongrey{
+    background-color: #e7e7e7; 
+    color: black;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
 }
 
-/* subrayado nombres zapatillas de la lista */
-.button-name{
-    text-decoration: none;
-    color: black;
+
+.card-sneakers{
+    height: 400px;
+    object-fit: cover;
+    width: 100px;
+    padding:15px 15px 15px 15px;    
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom:40px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgb(232, 231, 231);
 }
