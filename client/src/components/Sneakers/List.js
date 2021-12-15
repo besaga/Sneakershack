@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import SneakerService from '../../services/sneaker.service'
-import { Container, Row, Col, Card} from "react-bootstrap";
+import { Container, Row, Col, Card, Button} from "react-bootstrap";
 import SearchBar from '../SearchBar/SearchBar';
 import './Sneakers.css'
-
-
+import { BsCartPlusFill, BsInfoCircleFill } from "react-icons/bs"
+import BuyModal from "./../Cart/Modal";
 
 
 class SneakerList extends Component {
@@ -14,7 +14,8 @@ class SneakerList extends Component {
     super(props)
     this.state = {
       sneakers: [],
-      initialSneakers: []
+      initialSneakers: [],
+      purchase: false
     }
     this.service = new SneakerService()
   }
@@ -42,6 +43,15 @@ class SneakerList extends Component {
     }
   }
 
+  handleBuyClick = (userId, sneakerId) => {
+    this.props.addCartItem(userId, sneakerId)
+    this.setState({purchase: true})
+  }
+
+  handleClose = () => {
+    this.setState({ purchase: false });
+  }
+
   render() {
     return (
        <Container id="card-sneakers">
@@ -51,14 +61,27 @@ class SneakerList extends Component {
           {this.state.sneakers.map((elm, key) => {
             return (
               <Card style={{ width: '18rem' }} className="card-sneakers">
-                <Link id="button-name" as='a' to={`/sneakers/${elm._id}`}>
+                <Link className="list-card-bg" as='a' to={`/sneakers/${elm._id}`}>
                   <Card.Img variant="top" src={elm.image.thumbnail} alt={elm.name} />
                 </Link>
                 <Card.Body>
                   <Card.Title id="cardTitle" >{elm.brand} | {elm.name}</Card.Title>
-                  <Card.Text>
-                    {elm.retailPrice}€
-                  </Card.Text>
+                  <Row>
+                    <Col className="list-card-price"><strong>{elm.retailPrice}€</strong></Col>
+                    <Col>                         
+                      {
+                        this.props.loggedUser && <Button 
+                            onClick={() => this.handleBuyClick(this.props.loggedUser._id, elm._id)}
+                            variant="light"
+                            className="list-buy-button">
+                            <BsCartPlusFill />
+                          </Button>
+                      }
+                      <Link className="list-info-button btn btn-light" as='a' to={`/sneakers/${elm._id}`}>
+                          <BsInfoCircleFill />
+                      </Link> 
+                    </Col>
+                  </Row>
                 </Card.Body>
               </Card>
               )
@@ -66,6 +89,7 @@ class SneakerList extends Component {
             }
             </Row>
           </Col>
+          <BuyModal show={this.state.purchase} handleClose={this.handleClose} removeSneakersLink={true} />
         </Container>
     )
   }

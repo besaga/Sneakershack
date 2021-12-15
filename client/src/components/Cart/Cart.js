@@ -1,9 +1,10 @@
 import React from 'react'
 import CartService from "../../services/cart.service";
 import InvoiceService from "../../services/invoice.service";
-import { Button, Table } from "react-bootstrap";
+import { Button, Table , Row, Col, Container} from "react-bootstrap";
 import NodemailerService from '../../services/nodemailer.service';
 import "./Cart.css";
+import { BsTrash } from "react-icons/bs"
 
 class Cart extends React.Component {
     constructor(props) {
@@ -17,14 +18,10 @@ class Cart extends React.Component {
     handlePurchase = () => {
         this.invoiceService.confirmPurchase(this.props.loggedUser._id)
             .then(response => {
-                console.log("RESPONSE", response)
                 const invoice = response.data
                 this.cartService.emptyCart(this.props.loggedUser._id)
-                    .then(response => {
-                        return this.nodemailerService.sendEmail(invoice._id)
-                    })
                     .then(res => {
-                        console.log(res.data)
+                        this.nodemailerService.sendEmail(invoice._id)
                         window.location = `/confirmation/${invoice._id}`
                     })
                     .catch(err => console.log(err))
@@ -37,30 +34,38 @@ class Cart extends React.Component {
         return (
             <>
                 {!this.props.cart || this.props.cart.products.length === 0
-                    ? <h1 className='text'>No tienes elementos en tu carrito...</h1>
-                    : <>
-                        <Button variant="dark" Click={() => this.props.emptyCart(this.props.loggedUser._id)}>Empty cart</Button>
-                        <Table>
-                            <thead>
-                                <tr><th>Product</th><th>Colorway</th><th>Price</th><th></th></tr>
-                            </thead>
-                            <tbody>
-                                {this.props.cart.products.map((product, key) => {
-                                    totalBeforeTax += product.retailPrice
-                                    return <tr key={key}>
-                                        <td>{product.name}</td>
-                                        <td>{product.colorway}</td>
-                                        <td>€{product.retailPrice}</td>
-                                        <td><Button variant="dark" onClick={() => this.props.removeCartItem(this.props.loggedUser._id, product._id)}>X</Button></td>
-                                    </tr>
-                                })}
-                                <tr><td></td><td></td><td>{totalBeforeTax}€<strong> subtotal</strong></td><td></td></tr>
-                                <tr><td></td><td></td><td>{(totalBeforeTax * 0.21).toFixed(2)}€<strong> taxes (21%)</strong></td><td></td></tr>
-                                <tr><td></td><td></td><td>{(totalBeforeTax + totalBeforeTax * 0.21).toFixed(2)}€<strong>TOTAL</strong></td><td></td></tr>
-                            </tbody>
-                        </Table>
-                        <Button variant="dark" onClick={this.handlePurchase}>Confirm and pay</Button>
-                    </>
+                    ? <h1 className='cart-empty'>No tienes elementos en tu carrito...</h1>
+                    : <Container>
+                        <Row className='cart-list'>
+                            <Table>
+                                <thead>
+                                    <tr><th>Product</th><th>Colorway</th><th>Price</th><th></th></tr>
+                                </thead>
+                                <tbody>
+                                    {this.props.cart.products.map((product, key) => {
+                                        totalBeforeTax += product.retailPrice
+                                        return <tr key={key}>
+                                            <td><img className="thumbnail" src={product.image.thumbnail} />{product.name}</td>
+                                            <td>{product.colorway}</td>
+                                            <td>€{product.retailPrice}</td>
+                                            <td><Button variant="danger" onClick={() => this.props.removeCartItem(this.props.loggedUser._id, product._id)}><BsTrash /></Button></td>
+                                        </tr>
+                                    })}
+                                    <tr><td></td><td></td><td>{totalBeforeTax}€<strong> subtotal</strong></td><td></td></tr>
+                                    <tr><td></td><td></td><td>{(totalBeforeTax * 0.21).toFixed(2)}€<strong> taxes (21%)</strong></td><td></td></tr>
+                                    <tr><td></td><td></td><td>{(totalBeforeTax + totalBeforeTax * 0.21).toFixed(2)}€<strong>TOTAL</strong></td><td></td></tr>
+                                </tbody>
+                            </Table>
+                        </Row>    
+                        <Row>
+                            <Col md={2}>
+                                <Button variant="danger" Click={() => this.props.emptyCart(this.props.loggedUser._id)}>Empty cart</Button>
+                            </Col>
+                            <Col md={{ span: 2, offset: 8 }}>
+                                <Button variant="success" onClick={this.handlePurchase}>Confirm and pay</Button>
+                            </Col>
+                        </Row>
+                    </Container>
                 }
             </>
         )

@@ -11,6 +11,20 @@
     margin-bottom: 15px;
 }
 
-.text{
-    margin: 50%;
+h1.cart-empty{
+    text-align: center;
+    margin-top: 15%;
+}
+
+.cart-list table{
+    margin-top: 50px;
+}
+
+.thumbnail{
+    height: 60px;
+    margin-right: 15px;
+}
+
+.cart-list table td{
+    vertical-align: middle;
 }

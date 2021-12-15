@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col, Button, Modal } from "react-bootstrap";
 import SneakerService from "./../../services/sneaker.service";
 import { Link } from "react-router-dom";
 import CartService from "../../services/cart.service";
 import ValuationService from "../../services/valuation.service";
 import "./Sneakers.css";
 import ValuationForm from "./ValuationForm";
+import BuyModal from "./../Cart/Modal";
 
 class SneakerDetails extends Component {
   constructor(props) {
@@ -44,6 +45,10 @@ class SneakerDetails extends Component {
     this.setState({ purchase: true });
   };
 
+  handleClose = () => {
+    this.setState({ purchase: false });
+  };
+
   render() {
     const { sneaker } = this.state;
 
@@ -80,13 +85,10 @@ class SneakerDetails extends Component {
                   ) : (
                     <Link className="button-name" to="/login">Login para comprar</Link>
                   )}
-                  {this.state.purchase && (
-                    <div>
-                      <h2>Enhorabuena, tu producto se ha añadido al carrito.</h2>
-                      <Link className="button-name" to="/cart">Ir al carrito</Link>
-                      <Link className="button-name" to="/sneakers">Seguir comprando</Link>
-                    </div>
-                  )}
+                  
+                    <BuyModal show={this.state.purchase} handleClose={this.handleClose} />
+
+
                 </div>
               </article>
             </Col>

@@ -27,7 +27,7 @@ class Confirmation extends Component {
     const invoice = this.state.invoice;
 
     return (
-      <Container>
+      <Container className="confirmation-container">
         {this.state.invoice && <Row>
           <div>
             <Col>

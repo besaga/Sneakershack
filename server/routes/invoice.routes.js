@@ -13,9 +13,12 @@ router.post("/:userId", (req, res) => {
             model: 'Sneaker'
         })
         .then(cart => {
-            const subtotal = cart.products.length > 1
-                ? cart.products.reduce((previous, current) => previous.retailPrice + current.retailPrice)
-                : cart.products[0].retailPrice;
+            // const subtotal = cart.products.reduce((sum, current) => sum + current.retailPrice})
+            let subtotal = 0
+            for(i=0; i<cart.products.length; i++) {
+                subtotal+=cart.products[i].retailPrice
+            }
+
             const taxes = subtotal + (subtotal * 0.21)
             const simplifiedProducts = cart.products.map((el) => {
                 return {  

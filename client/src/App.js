@@ -86,7 +86,7 @@ class App extends Component {
         <Navbar productsQuantity={this.state.productsQuantity} storeUser={this.storeUser} loggedUser={this.state.loggedUser} />
         <Switch>
           <Route path='/' exact render={() => <Home /> } />
-          <Route path='/sneakers' exact render={() => <SneakerList />}/>
+          <Route path='/sneakers' exact render={() => <SneakerList loggedUser={this.state.loggedUser} addCartItem={this.addCartItem} />}/>
           <Route path='/sneakers/:id' exact render={(props) => <SneakerDetails {...props} loggedUser={this.state.loggedUser} addCartItem={this.addCartItem}  />}/>
           {this.state.loggedUser ?
               <>

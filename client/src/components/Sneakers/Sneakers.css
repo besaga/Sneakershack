@@ -8,11 +8,6 @@
     font-size: 16px;
     border-radius: 5px;
 }
-p{
-    
-}
-
-
 .card-sneakers{
     height: 400px;
     object-fit: cover;
@@ -25,16 +20,18 @@ p{
     box-shadow: 4px 4px 10px rgb(232, 231, 231);
 }
 
-#button-name{
-    background-color: rgb(228, 228, 228);
-    border: none;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 5px;
-    margin-bottom: 15px;
+.list-buy-button{
+    float: right;
+    margin-left: 5px;
+}
+
+.list-info-button{
+    float: right;
+}
+
+.list-card-price {
+    padding-top: 5px;
+    font-size: 18px;
 }
 
 #cardTitle {
@@ -43,4 +40,8 @@ p{
 
 #text-col{
     margin-top: 45px
+}
+
+.list-card-bg {
+    background-color: #f8f9fa;
 }
