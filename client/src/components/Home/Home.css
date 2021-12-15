@@ -32,6 +32,7 @@
     font-size: 16px;
     margin-bottom: 15px;
     font-weight: 800;
+    font-size: x-large;
     margin-top: 3%;
 }
 
@@ -50,7 +51,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(235, 235, 235, 0.8);
+    background: rgba(235, 235, 235, 0.6);
     height: calc(100vh + 30px);
     width: 100%;
     text-align: center;
@@ -59,6 +60,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
 }
 
   .overlay img {

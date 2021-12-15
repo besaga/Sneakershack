@@ -19,7 +19,7 @@ const Navigation = ({ loggedUser, storeUser, productsQuantity }) => {
    <Navbar bg="light" variant="light">
       <Container>
         <Col>
-          <Nav.Link as={Link} to="/" ><img className="logito" src={ Logo } /></Nav.Link>
+          <Nav.Link as={Link} to="/" > <img className="logito" src={ Logo } /> </Nav.Link>
         </Col>  
         <Col>
           <Nav className="me-auto nav-position navigation-arrow">

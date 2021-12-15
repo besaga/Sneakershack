@@ -62,7 +62,7 @@ class Profile extends Component {
         <Row>
           <Col>
             <h2>User data</h2>
-              { this.state.saved && <p>Guardado con éxito <Button variant="dark" onClick={() => this.setState({saved: false})}>Seguir en el perfil</Button> <Link to="/sneakers">Ir a comprar</Link></p> }
+              { this.state.saved && <p>Guardado con éxito <Button variant="dark" onClick={() => this.setState({saved: false})}>Seguir en el perfil</Button> <Link to="/sneakers">Shop</Link></p> }
               <Form onSubmit={this.handleSubmit}>
                 <Form.Group>
                     <Form.Label>Email</Form.Label>

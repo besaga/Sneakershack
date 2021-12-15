@@ -58,16 +58,16 @@ class SneakerDetails extends Component {
               </div>
             </Col>
 
-            <Col md={6}>
+            <Col id="text-col" md={6}>
               <article>
                 <h2>
                   {sneaker.name} | {sneaker.brand}
                 </h2>
                 <p>{sneaker.name} </p>
-                <p>{sneaker.sku}</p>
-                <p>{sneaker.colorway}</p>
-                <p>Precio: {sneaker.retailPrice}€</p>
-                <p>Precio de mercado: {sneaker.estimatedMarketValue}€</p>
+                <p>Ref: {sneaker.sku}</p>
+                <p>Color: {sneaker.colorway}</p>
+                <p>Price: {sneaker.retailPrice}€</p>
+                <p>Market Price: {sneaker.estimatedMarketValue}€</p>
                 <p>{sneaker.story}</p>
                 <div className="comprar">
                   <Link className="button-name" to={"/sneakers"}>
@@ -75,7 +75,7 @@ class SneakerDetails extends Component {
                   </Link>
                   {this.props.loggedUser ? (
                     <Button onClick={() => this.handleClick(this.props.loggedUser._id, sneaker._id)}
-                      className="centrado button-nameon">Comprar
+                      className="button-name">Comprar
                     </Button>
                   ) : (
                     <Link className="button-name" to="/login">Login para comprar</Link>

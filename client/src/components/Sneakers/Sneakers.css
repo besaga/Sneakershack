@@ -8,6 +8,9 @@
     font-size: 16px;
     border-radius: 5px;
 }
+p{
+    
+}
 
 
 .card-sneakers{
@@ -36,4 +39,8 @@
 
 #cardTitle {
     font-size: 15px;
+}
+
+#text-col{
+    margin-top: 45px
 }

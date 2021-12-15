@@ -23,7 +23,7 @@ const Home = (props) => {
       </Carousel>
         <div className="overlay">
           <img src={logo} alt="Logotipo"></img>
-          <Link id="button-name-home" to={'/sneakers'}>Comprar</Link>
+          <Link id="button-name-home" to={'/sneakers'}>Shop</Link>
         </div>
       <Card>
         <Card.Body>
