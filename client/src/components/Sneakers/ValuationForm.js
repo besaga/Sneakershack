@@ -1,6 +1,7 @@
 import ValuationService from "../../services/valuation.service";
 import React, { Component } from "react";
 import { Container, Row, Form, Button } from "react-bootstrap";
+import "./Sneakers.css"
 
 class ValuationForm extends Component {
   constructor(props) {
@@ -36,11 +37,7 @@ class ValuationForm extends Component {
           <Form onSubmit={this.handleSubmit}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Puntuación</Form.Label>
-              <Form.Select
-                onChange={this.handleChange}
-                value={this.state.rating}
-                name="rating"
-              >
+              <Form.Select onChange={this.handleChange} value={this.state.rating} name="rating">
                 <option>Select your rating</option>
                 <option value="0">0</option>
                 <option value="1">1</option>
@@ -52,15 +49,9 @@ class ValuationForm extends Component {
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
               <Form.Label>Escribe un comentario</Form.Label>
-              <Form.Control
-                onChange={this.handleChange}
-                value={this.state.comment}
-                name="comment"
-                as="textarea"
-                rows={3}
-              />
+              <Form.Control onChange={this.handleChange} value={this.state.comment} name="comment" as="textarea" rows={3}/>
             </Form.Group>
-            <Button variant="primary" type="submit">
+            <Button className="button-name" type="submit">
               Submit
             </Button>
           </Form>

@@ -62,7 +62,7 @@ class Profile extends Component {
         <Row>
           <Col>
             <h2>User data</h2>
-              { this.state.saved && <p>Guardado con éxito <button onClick={() => this.setState({saved: false})}>Seguir en el perfil</button> <Link to="/sneakers">Ir a comprar</Link></p> }
+              { this.state.saved && <p>Guardado con éxito <Button variant="dark" onClick={() => this.setState({saved: false})}>Seguir en el perfil</Button> <Link to="/sneakers">Ir a comprar</Link></p> }
               <Form onSubmit={this.handleSubmit}>
                 <Form.Group>
                     <Form.Label>Email</Form.Label>
@@ -101,7 +101,7 @@ class Profile extends Component {
                     <Form.Control onChange={(e) => this.handleInputChange(e, true)} name="cp" type="text" placeholder="28050" value={this.state?.user?.address?.cp}/>
                 </Form.Group>
                 <Col>
-                    <Button className="button-profile" type="submit" variant="light">Submit</Button>
+                    <Button variant="dark" type="submit">Submit</Button>
                 </Col>    
             </Form>
           </Col>
@@ -118,7 +118,7 @@ class Profile extends Component {
               {this.state.invoices.length && this.state.invoices.map((inv, key) => {
                 return (
                   <tr key={key}>
-                    <td><Link to={`/confirmation/${inv._id}`}>{inv._id}</Link></td><td>{inv.products.length}</td><td>{inv.createdAt}</td><td>{inv.total}€</td>
+                    <td><Link className="button-name" to={`/confirmation/${inv._id}`}>{inv._id}</Link></td><td>{inv.products.length}</td><td>{inv.createdAt}</td><td>{inv.total}€</td>
                   </tr>
                 )
               })}

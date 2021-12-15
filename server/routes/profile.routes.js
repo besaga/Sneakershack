@@ -17,7 +17,6 @@ router.post("/edit/:id", (req, res) => {
 
   User.findById(id)
     .then((user) => {
-      console.log(user);
       res.status(200).json(user);
 
       const bcryptSalt = 10;

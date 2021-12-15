@@ -51,11 +51,11 @@ class SneakerList extends Component {
           {this.state.sneakers.map((elm, key) => {
             return (
               <Card style={{ width: '18rem' }} className="card-sneakers">
-                <Link className="button-name" as='a' to={`/sneakers/${elm._id}`}>
+                <Link id="button-name" as='a' to={`/sneakers/${elm._id}`}>
                   <Card.Img variant="top" src={elm.image.thumbnail} alt={elm.name} />
                 </Link>
                 <Card.Body>
-                  <Card.Title>{elm.brand} | {elm.name}</Card.Title>
+                  <Card.Title id="cardTitle" >{elm.brand} | {elm.name}</Card.Title>
                   <Card.Text>
                     {elm.retailPrice}€
                   </Card.Text>

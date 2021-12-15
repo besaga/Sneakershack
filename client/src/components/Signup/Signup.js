@@ -45,7 +45,7 @@ class SignupPage extends Component {
                 <Form.Control onChange={this.handleInputChange} value={this.state.password} name="password" type="password" placeholder="Password" />
               </Form.Group>
 
-              <Button variant="light" type="submit">
+              <Button variant="dark" type="submit">
                 Submit
               </Button>
             </Form>

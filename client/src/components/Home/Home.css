@@ -23,16 +23,16 @@
     height: 200px;
 }
 
-.button-name{
-    background-color: #e7e7e7; 
+#button-name-home {
     color: black;
     border: none;
-    padding: 15px 32px;
+    padding: 10px 15px;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    border-radius: 5px;
+    margin-bottom: 15px;
+    font-weight: 800;
+    margin-top: 3%;
 }
 
 .tiovivo img {
@@ -43,4 +43,24 @@
 /* FOOTER */
 .blockquote-footer{
     text-align: center;
+  }
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(235, 235, 235, 0.8);
+    height: calc(100vh + 30px);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    z-index: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+  .overlay img {
+      width: 30%;
   }

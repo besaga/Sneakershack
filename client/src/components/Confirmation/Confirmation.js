@@ -55,7 +55,7 @@ class Confirmation extends Component {
                 </tbody>
             </Table>
           </div>
-          <Link className="css-button-arrow--sand" to="/sneakers">Return to sneakers list</Link>
+          <Link className="button-name" to="/sneakers">Return to sneakers list</Link>
         </Row> }
       </Container>
     )

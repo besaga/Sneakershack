@@ -46,7 +46,7 @@ class LoginPage extends Component {
                   <Form.Control onChange={this.handleInputChange} value={this.state.password} name="password" type="password" placeholder="Password" />
                 </Form.Group>
 
-                <Button variant="primary" type="submit">
+                <Button variant="dark" type="submit">
                   Submit
                 </Button>
               </Form>

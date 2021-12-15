@@ -1,9 +1,9 @@
 import React from 'react'
 import CartService from "../../services/cart.service";
 import InvoiceService from "../../services/invoice.service";
-import { Table } from "react-bootstrap";
+import { Button, Table } from "react-bootstrap";
 import NodemailerService from '../../services/nodemailer.service';
-
+import "./Cart.css";
 
 class Cart extends React.Component {
     constructor(props) {
@@ -37,9 +37,9 @@ class Cart extends React.Component {
         return (
             <>
                 {!this.props.cart || this.props.cart.products.length === 0
-                    ? <h1>No tienes elementos en tu carrito...</h1>
+                    ? <h1 className='text'>No tienes elementos en tu carrito...</h1>
                     : <>
-                        <button onClick={() => this.props.emptyCart(this.props.loggedUser._id)}>Empty cart</button>
+                        <Button variant="dark" Click={() => this.props.emptyCart(this.props.loggedUser._id)}>Empty cart</Button>
                         <Table>
                             <thead>
                                 <tr><th>Product</th><th>Colorway</th><th>Price</th><th></th></tr>
@@ -51,7 +51,7 @@ class Cart extends React.Component {
                                         <td>{product.name}</td>
                                         <td>{product.colorway}</td>
                                         <td>€{product.retailPrice}</td>
-                                        <td><button onClick={() => this.props.removeCartItem(this.props.loggedUser._id, product._id)}>X</button></td>
+                                        <td><Button variant="dark" onClick={() => this.props.removeCartItem(this.props.loggedUser._id, product._id)}>X</Button></td>
                                     </tr>
                                 })}
                                 <tr><td></td><td></td><td>{totalBeforeTax}€<strong> subtotal</strong></td><td></td></tr>
@@ -59,7 +59,7 @@ class Cart extends React.Component {
                                 <tr><td></td><td></td><td>{(totalBeforeTax + totalBeforeTax * 0.21).toFixed(2)}€<strong>TOTAL</strong></td><td></td></tr>
                             </tbody>
                         </Table>
-                        <button onClick={this.handlePurchase}>Confirm and pay</button>
+                        <Button variant="dark" onClick={this.handlePurchase}>Confirm and pay</Button>
                     </>
                 }
             </>

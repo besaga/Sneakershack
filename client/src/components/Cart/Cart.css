@@ -1,9 +1,6 @@
-.logito{
-    height: 45px;
-}
 .button-name{
-    background-color: #000000; 
-    color: rgb(252, 252, 252);
+    background-color: rgb(152, 151, 151);
+    color: rgb(255, 254, 254);
     border: none;
     padding: 10px 15px;
     text-align: center;
@@ -14,8 +11,6 @@
     margin-bottom: 15px;
 }
 
-
-.navbar {
-    z-index: 1;
-
+.text{
+    margin: 50%;
 }

@@ -3,20 +3,16 @@
   padding: 0px;
   text-decoration: none;
 }
-
 body {
   background-color:rgb(233, 222, 206)
 }
-
 div.contenedor {
   position: fixed;
   bottom:40%;
   left: 30%;
   right: 90%;
   margin-left: -104.5px;
-  
 }
-
 .nav-position{
     justify-content: flex-end
 }
