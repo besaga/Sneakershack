@@ -9,13 +9,16 @@ import { BsTrash } from "react-icons/bs"
 class Cart extends React.Component {
     constructor(props) {
         super(props)
-        this.state = {}
+        this.state = {
+            busy: false
+        }
         this.cartService = new CartService()
         this.invoiceService = new InvoiceService()
         this.nodemailerService = new NodemailerService()
     }
 
     handlePurchase = () => {
+        this.setState({busy: true})
         this.invoiceService.confirmPurchase(this.props.loggedUser._id)
             .then(response => {
                 const invoice = response.data
@@ -48,7 +51,7 @@ class Cart extends React.Component {
                                             <td><img className="thumbnail" src={product.image.thumbnail} />{product.name}</td>
                                             <td>{product.colorway}</td>
                                             <td>{product.retailPrice} €</td>
-                                            <td><Button variant="danger" onClick={() => this.props.removeCartItem(this.props.loggedUser._id, product._id)}><BsTrash /></Button></td>
+                                            <td><Button disabled={this.state.busy} variant="danger" onClick={() => this.props.removeCartItem(this.props.loggedUser._id, product._id)}><BsTrash /></Button></td>
                                         </tr>
                                     })}
                                     <tr><td></td><td></td><td>{totalBeforeTax}€<strong> subtotal</strong></td><td></td></tr>
@@ -59,10 +62,10 @@ class Cart extends React.Component {
                         </Row>    
                         <Row>
                             <Col md={2}>
-                                <Button variant="danger" onClick={() => this.props.emptyCart(this.props.loggedUser._id)}>Empty cart</Button>
+                                <Button variant="danger" disabled={this.state.busy} onClick={() => {this.setState({busy: true});this.props.emptyCart(this.props.loggedUser._id)}}>Empty cart</Button>
                             </Col>
                             <Col md={{ span: 2, offset: 8 }}>
-                                <Button variant="success" onClick={this.handlePurchase}>Confirm and pay</Button>
+                                <Button variant="success" disabled={this.state.busy} onClick={this.handlePurchase}>Confirm and pay</Button>
                             </Col>
                         </Row>
                     </Container>
