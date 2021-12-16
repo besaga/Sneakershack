@@ -3,7 +3,7 @@ import axios from 'axios'
 class CartService {
   constructor() {
     this.app = axios.create({
-      baseURL: 'http://localhost:5005/api/cart'
+      baseURL: `${process.env.REACT_APP_BASE_URL}/cart`
     })
   }
   

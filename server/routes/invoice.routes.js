@@ -13,7 +13,6 @@ router.post("/:userId", (req, res) => {
             model: 'Sneaker'
         })
         .then(cart => {
-            // const subtotal = cart.products.reduce((sum, current) => sum + current.retailPrice})
             let subtotal = 0
             for(i=0; i<cart.products.length; i++) {
                 subtotal+=cart.products[i].retailPrice
@@ -36,9 +35,7 @@ router.post("/:userId", (req, res) => {
                 taxes: taxes.toFixed(2),
                 total: (subtotal + taxes).toFixed(2)
             })
-                .then(invoice => {
-                    res.status(200).json(invoice)
-                })
+                .then(invoice => {res.status(200).json(invoice)})
                 .catch(err => console.log(err))
 
         })

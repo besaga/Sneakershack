@@ -3,7 +3,7 @@ import axios from "axios";
 class ValuationService {
   constructor() {
     this.app = axios.create({
-      baseURL: "http://localhost:5005/api/valuation",
+      baseURL: `${process.env.REACT_APP_BASE_URL}/valuation`,
       withCredentials: true,
     });
   }

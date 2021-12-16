@@ -27,7 +27,7 @@ const Navigation = ({ loggedUser, storeUser, productsQuantity }) => {
           {loggedUser ?
               <>
                 <Nav.Link as={Link} to="/profile">User profile</Nav.Link>
-                <Nav.Link as={Link} to="/cart">Tu Carrito <Badge pill bg="secondary">{productsQuantity}</Badge></Nav.Link>
+                <Nav.Link as={Link} to="/cart">Cart <Badge pill bg="secondary">{productsQuantity}</Badge></Nav.Link>
                 <Nav.Link as={"span"} onClick={logout}>logout</Nav.Link>
               </>
             :
