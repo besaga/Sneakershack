@@ -79,7 +79,7 @@ class SneakerDetails extends Component {
                     Volver a Zapatillas
                   </Link>
                   {this.props.loggedUser ? (
-                    <Button onClick={() => this.handleClick(this.props.loggedUser._id, sneaker._id)}
+                    <Button variant="dark" onClick={() => this.handleClick(this.props.loggedUser._id, sneaker._id)}
                       className="button-name">Comprar
                     </Button>
                   ) : (

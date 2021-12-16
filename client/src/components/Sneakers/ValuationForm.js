@@ -51,7 +51,7 @@ class ValuationForm extends Component {
               <Form.Label>Escribe un comentario</Form.Label>
               <Form.Control onChange={this.handleChange} value={this.state.comment} name="comment" as="textarea" rows={3}/>
             </Form.Group>
-            <Button className="button-name" type="submit">
+            <Button  variant="dark" className="button-name" type="submit">
               Submit
             </Button>
           </Form>

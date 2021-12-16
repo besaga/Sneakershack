@@ -43,7 +43,7 @@ class Cart extends React.Component {
                                 </thead>
                                 <tbody>
                                     {this.props.cart.products.map((product, key) => {
-                                        totalBeforeTax += product.retailPrice
+                                        totalBeforeTax = product.retailPrice
                                         return <tr key={key}>
                                             <td><img className="thumbnail" src={product.image.thumbnail} />{product.name}</td>
                                             <td>{product.colorway}</td>
@@ -53,13 +53,13 @@ class Cart extends React.Component {
                                     })}
                                     <tr><td></td><td></td><td>{totalBeforeTax}€<strong> subtotal</strong></td><td></td></tr>
                                     <tr><td></td><td></td><td>{(totalBeforeTax * 0.21).toFixed(2)}€<strong> taxes (21%)</strong></td><td></td></tr>
-                                    <tr><td></td><td></td><td>{(totalBeforeTax + totalBeforeTax * 0.21).toFixed(2)}€<strong>TOTAL</strong></td><td></td></tr>
+                                    <tr><td></td><td></td><td>{((totalBeforeTax * 0.21)+totalBeforeTax).toFixed(2)}€<strong>TOTAL</strong></td><td></td></tr>
                                 </tbody>
                             </Table>
                         </Row>    
                         <Row>
                             <Col md={2}>
-                                <Button variant="danger" Click={() => this.props.emptyCart(this.props.loggedUser._id)}>Empty cart</Button>
+                                <Button variant="danger" onClick={() => this.props.emptyCart(this.props.loggedUser._id)}>Empty cart</Button>
                             </Col>
                             <Col md={{ span: 2, offset: 8 }}>
                                 <Button variant="success" onClick={this.handlePurchase}>Confirm and pay</Button>

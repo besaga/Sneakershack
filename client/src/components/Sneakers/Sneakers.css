@@ -45,3 +45,16 @@
 .list-card-bg {
     background-color: #f8f9fa;
 }
+
+.button-name{
+    background-color: #000000; 
+    color: rgb(245, 243, 243);
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}

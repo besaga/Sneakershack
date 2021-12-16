@@ -18,6 +18,7 @@ class SignupPage extends Component {
     this.authService.signup(this.state.email, this.state.password)
       .then(response => {
         this.props.storeUser(response.data)
+        window.location = "/login"
       })
       .catch(err => console.log(err.response.data.message))
   }
