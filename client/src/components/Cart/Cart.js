@@ -43,17 +43,17 @@ class Cart extends React.Component {
                                 </thead>
                                 <tbody>
                                     {this.props.cart.products.map((product, key) => {
-                                        totalBeforeTax = product.retailPrice
+                                        totalBeforeTax += product.retailPrice
                                         return <tr key={key}>
                                             <td><img className="thumbnail" src={product.image.thumbnail} />{product.name}</td>
                                             <td>{product.colorway}</td>
-                                            <td>€{product.retailPrice}</td>
+                                            <td>{product.retailPrice} €</td>
                                             <td><Button variant="danger" onClick={() => this.props.removeCartItem(this.props.loggedUser._id, product._id)}><BsTrash /></Button></td>
                                         </tr>
                                     })}
                                     <tr><td></td><td></td><td>{totalBeforeTax}€<strong> subtotal</strong></td><td></td></tr>
                                     <tr><td></td><td></td><td>{(totalBeforeTax * 0.21).toFixed(2)}€<strong> taxes (21%)</strong></td><td></td></tr>
-                                    <tr><td></td><td></td><td>{((totalBeforeTax * 0.21)+totalBeforeTax).toFixed(2)}€<strong>TOTAL</strong></td><td></td></tr>
+                                    <tr><td></td><td></td><td>{((totalBeforeTax * 0.21) + totalBeforeTax).toFixed(2)}€<strong>TOTAL</strong></td><td></td></tr>
                                 </tbody>
                             </Table>
                         </Row>    

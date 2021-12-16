@@ -31,7 +31,7 @@ class Confirmation extends Component {
         {this.state.invoice && <Row>
           <div>
             <Col>
-                <h1>SneakerHack</h1>
+                <h1>Eleven One</h1>
                 <p>Your sneakers store</p>
             </Col>
             <Col>

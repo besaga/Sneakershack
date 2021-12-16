@@ -18,7 +18,7 @@ router.post("/:userId", (req, res) => {
                 subtotal+=cart.products[i].retailPrice
             }
 
-            const taxes = subtotal + (subtotal * 0.21)
+            const taxes = subtotal * 0.21
             const simplifiedProducts = cart.products.map((el) => {
                 return {  
                     sku: el.sku,
