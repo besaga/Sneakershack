@@ -3,7 +3,9 @@ import axios from 'axios'
 class InvoiceService {
   constructor() {
     this.app = axios.create({
-      baseURL: `${process.env.REACT_APP_BASE_URL}/invoice`
+      baseURL: `${process.env.REACT_APP_BASE_URL}/invoice`,
+      withCredentials: true
+
     })
   }
   

@@ -3,7 +3,8 @@ import axios from 'axios'
 class SneakerService {
   constructor() {
     this.app = axios.create({
-      baseURL: process.env.REACT_APP_BASE_URL
+      baseURL: process.env.REACT_APP_BASE_URL,
+      withCredentials: true
     })
   }
   getAllSneakers = () => this.app.get("/sneakers")
