@@ -2,15 +2,18 @@
 >
 http://eleven-one-project.herokuapp.com/
 
+
 🚀 COMENZANDO
 >
 Página web de venta de zapatillas.
+
 
 📋ABOUT
 >
 Esta página web permite a los usuarios comprar las ultimas tenedencias de zapatillas de marcas muy conocidas. 
 Tambien, puedes acceder a tu area de usuario donde podras modificar tus datos y acceder facturas pasadas.
 
+>
 🛠️TECNOLOGIAS
 >
 ---CLIENTE (REACT)---
