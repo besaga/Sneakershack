@@ -1,17 +1,17 @@
-LINK💻 
+💻 LINK
 >
 http://eleven-one-project.herokuapp.com/
 
-COMENZANDO 🚀 
+🚀 COMENZANDO
 >
 Página web de venta de zapatillas.
 
-ABOUT📋
+📋ABOUT
 >
 Esta página web permite a los usuarios comprar las ultimas tenedencias de zapatillas de marcas muy conocidas. 
 Tambien, puedes acceder a tu area de usuario donde podras modificar tus datos y acceder facturas pasadas.
 
-TECNOLOGIAS🛠️
+🛠️TECNOLOGIAS
 >
 CLIENTE (REACT)
 >
@@ -30,6 +30,7 @@ CLIENTE (REACT)
 -Cart => Carrito de la compra
 >
 SERVIDOR (API)
+>
 -Zapatillas  => get todas las zapatillas
 >
 -Zapatillas/:id => get un zapatilla
@@ -47,7 +48,7 @@ SERVIDOR (API)
 -Payment => recibe info del carrito para el pago
 >
 
-TECNOLOGIAS🛠️
+🛠️TECNOLOGIAS
 >
 -MongoDB
 >
@@ -61,7 +62,7 @@ TECNOLOGIAS🛠️
 >
 
 >
-AUTORES👩‍💻
+👩‍💻AUTORES
 Analía López Rodríguez
 >
 Begoña Sánchez Gallardo
