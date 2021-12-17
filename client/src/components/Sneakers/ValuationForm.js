@@ -48,7 +48,7 @@ class ValuationForm extends Component {
               </Form.Select>
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-              <Form.Label>Escribe un comentario</Form.Label>
+              <Form.Label>Write a comment</Form.Label>
               <Form.Control onChange={this.handleChange} value={this.state.comment} name="comment" as="textarea" rows={3}/>
             </Form.Group>
             <Button  variant="dark" className="button-name" type="submit">

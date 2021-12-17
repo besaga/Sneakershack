@@ -53,7 +53,7 @@ class Profile extends Component {
     }
 
     const { name, value } = e.currentTarget;
-    this.setState({ user: {[name]: value }});
+    this.setState({ user: {...this.state.user, [name]: value }});
   };
 
   handleClose = () => {

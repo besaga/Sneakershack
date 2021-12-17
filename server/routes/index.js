@@ -8,6 +8,4 @@ module.exports = app => {
   app.use("/api/invoice", require("./invoice.routes"));
   app.use("/api/valuation", require("./valuation.routes"));
   app.use("/api/nodemailer", require("./nodemailer.routes"))
-
-
 }

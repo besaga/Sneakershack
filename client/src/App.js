@@ -3,7 +3,7 @@ import { Component } from 'react';
 import Navbar from './components/layout/Navigation/Navbar';
 import SignupPage from './components/Signup/Signup';
 import LoginPage from './components/Login/Login';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import AuthService from './services/auth.service';
 import CartService from "./services/cart.service";
 import Home from './components/Home/Home';
@@ -86,7 +86,15 @@ class App extends Component {
         <Navbar productsQuantity={this.state.productsQuantity} storeUser={this.storeUser} loggedUser={this.state.loggedUser} />
         <Switch>
           <Route path='/' exact render={() => <Home /> } />
-          <Route path='/sneakers' exact render={() => <SneakerList loggedUser={this.state.loggedUser} addCartItem={this.addCartItem} />}/>
+          <Route path='/sneakers' exact render={() => {
+            return this.state.loggedUser !== null ?
+            <SneakerList loggedUser={this.state.loggedUser} addCartItem={this.addCartItem} />
+            :
+            <Redirect to="/login" />
+            }
+
+          }
+          />
           <Route path='/sneakers/:id' exact render={(props) => <SneakerDetails {...props} loggedUser={this.state.loggedUser} addCartItem={this.addCartItem}  />}/>
           {this.state.loggedUser ?
               <>

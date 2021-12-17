@@ -1,7 +1,9 @@
 const router = require("express").Router()
 const Sneaker = require("../models/Sneaker.model")
+const {isLoggedIn} = require("../middleware/index")
 
-router.get("/", (req, res) => {
+router.get("/", isLoggedIn, (req, res) => {
+  console.log("holi, soy la ruta")
   Sneaker.find()
     .then(allSneakers => res.json(allSneakers))
     .catch(err => res.json({ err, errMessage: "Problema buscando Sneakers" }))

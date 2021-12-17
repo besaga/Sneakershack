@@ -37,7 +37,7 @@ class Cart extends React.Component {
         return (
             <>
                 {!this.props.cart || this.props.cart.products.length === 0
-                    ? <h1 className='cart-empty'>No tienes elementos en tu carrito...</h1>
+                    ? <h1 className='cart-empty'>Cart is empty</h1>
                     : <Container>
                         <Row className='cart-list'>
                             <Table>
