@@ -13,7 +13,7 @@ Tambien, puedes acceder a tu area de usuario donde podras modificar tus datos y 
 
 🛠️TECNOLOGIAS
 >
-CLIENTE (REACT)
+---CLIENTE (REACT)---
 >
 -Página principal => muestra todas las zapatillas
 >
@@ -29,7 +29,7 @@ CLIENTE (REACT)
 >
 -Cart => Carrito de la compra
 >
-SERVIDOR (API)
+---SERVIDOR (API)---
 >
 -Zapatillas  => get todas las zapatillas
 >
